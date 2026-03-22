@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head(title='Phong Thủy | S-Housing Clone', description='Tư vấn phong thủy chuẩn xác đem lại tài vận cho không gian sống.', keywords='phong thủy nội thất', image='/images/feng_shui_hero.png')}"></head>
+<body>
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <main>
+        <section class="interior-hero" style="background-image: url('/images/feng_shui_hero.png');">
+            <div class="hero-overlay"></div>
+            <h1>Phong Thủy Không Gian</h1>
+        </section>
+
+        <section class="page-content container">
+            <div class="content-block">
+                <h2>Tính Sinh Khí Cho Ngôi Nhà</h2>
+                <p>Phong thủy không chỉ là vị trí đặt để, đó là sự cân bằng các luồng khí, lựa chọn màu sắc hợp cung bản mệnh và bố trí hình khối phù hợp. Chúng tôi áp dụng phong thủy hiện đại nhưng vẫn tôn trọng giá trị truyền thống.</p>
+            </div>
+            <div class="content-block">
+                <h2>Dịch Vụ Tư Vấn Miễn Phí</h2>
+                <p>Khi lựa chọn thi công tại S-Housing, gia chủ sẽ được chuyên gia phong thủy của chúng tôi tư vấn các nguyên tắc kê giường, hướng bếp, và bố trí không gian sống tốt nhất cho sức khỏe, tài lộc.</p>
+                <a href="/lien-he" class="btn btn-primary" style="margin-top: 20px;">Nhận Tư Vấn Cụ Thể</a>
+            </div>
+        </section>
+        <!-- Dynamic CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
+                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+            </div>
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+</html>

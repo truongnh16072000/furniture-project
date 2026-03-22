@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<!-- head fragment included with parameters for title, description, keywords, image -->
+<head th:replace="~{fragments/head :: head(title='Thiết Kế Thi Công Nội Thất Trọn Gói S-Housing | Clone', description='S-housing cung cấp dịch vụ thiết kế và thi công nội thất chuyên nghiệp.', keywords='thiết kế nội thất, thi công nội thất, s-housing', image='/images/hero.png')}">
+</head>
+
+<body>
+
+    <!-- Header Fragment -->
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" th:style="'background-image: url(' + @{/images/hero.png} + ');'">
+            <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(26, 32, 44, 0.8), rgba(0, 0, 0, 0.4));"></div>
+            <div class="container hero-content">
+                <h1 style="font-weight: 800; letter-spacing: -1px; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Kiến Tạo Không Gian Sống <br/><span style="color: var(--primary-color);">Hoàn Hảo</span> & Tiện Nghi</h1>
+                <p style="font-size: 20px; font-weight: 300; max-width: 700px; margin: 0 auto 40px auto; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Giải pháp thiết kế và thi công nội thất trọn gói. Tích hợp công nghệ VR 4D và nguyên lý phong thủy cho ngôi nhà mơ ước của bạn.</p>
+                <div class="hero-buttons">
+                    <a th:href="@{/du-an}" class="btn btn-primary btn-large btn-glow">Xem Dự Án Yêu Thích</a>
+                    <a th:href="@{/lien-he}" class="btn btn-secondary btn-large">Nhận Báo Giá Ngay</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Features -->
+        <section class="services-section">
+            <div class="container text-center section-header">
+                <h2>Dịch Vụ Nổi Bật Tại S-Housing</h2>
+                <p>Khẳng định chất lượng qua từng không gian sống</p>
+            </div>
+            
+            <div class="container services-grid">
+                <div class="service-card">
+                    <div class="icon">📐</div>
+                    <h3>Thiết Kế Nội Thất</h3>
+                    <p>Sáng tạo không gian mang đậm dấu ấn cá nhân, tối ưu hóa công năng và thẩm mỹ.</p>
+                </div>
+                
+                <div class="service-card highlight">
+                    <div class="icon">🔮</div>
+                    <h3>Thiết Kế Phong Thủy</h3>
+                    <p>Ứng dụng chuyên sâu yếu tố phong thủy giúp gia chủ đón nhận tài lộc và bình an.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon">👓</div>
+                    <h3>Công Nghệ VR 4D</h3>
+                    <p>Trải nghiệm thực tế ảo không gian nhà bạn trước khi tiến hành thi công thực tế.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="icon">🔨</div>
+                    <h3>Thi Công Trọn Gói</h3>
+                    <p>Xưởng sản xuất riêng biệt, kiểm soát chặt chẽ quá trình sản xuất và thi công hoàn thiện.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Intro Section -->
+        <section class="about-section" style="background-color: var(--bg-white);">
+            <div class="container flex-row" style="align-items: center;">
+                <div class="about-image" style="position: relative;">
+                    <img th:src="@{/images/about_architecture.png}" alt="Thi công nội thất S-Housing" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
+                    <div style="position: absolute; bottom: -30px; right: -30px; background: var(--primary-color); color: white; padding: 30px; border-radius: 50%; width: 140px; height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(201, 147, 57, 0.4);">
+                        <strong style="font-size: 32px; line-height: 1;">10+</strong>
+                        <span style="font-size: 14px; text-align: center;">Năm Kinh Nghiệm</span>
+                    </div>
+                </div>
+                <div class="about-text" style="padding-left: 40px;">
+                    <h2 style="font-size: 46px; margin-bottom: 25px; color: var(--secondary-color);">Vì Sao Khách Hàng Chọn <br/><span style="color: var(--primary-color);">S.Housing?</span></h2>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--text-color); margin-bottom: 35px;">Chúng tôi không chỉ cung cấp dịch vụ thiết kế đơn thuần, mà tạo ra giá trị sống đích thực. Bằng việc kết hợp đội ngũ KTS giàu kinh nghiệm, tư vấn phong thủy bài bản và ứng dụng công nghệ hiện đại mang tính đột phá.</p>
+                    
+                    <ul class="check-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 40px;">
+                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">100%</strong> Mẫu thiết kế cá nhân hóa</li>
+                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">Bảo hành</strong> dài hạn, bảo trì trọn đời</li>
+                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">Trực tiếp</strong> sản xuất tại xưởng</li>
+                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">Minh bạch</strong> chi phí, không phát sinh</li>
+                    </ul>
+                    <a th:href="@{/ve-chung-toi}" class="btn btn-primary btn-large btn-glow" style="border-radius: 30px;">Tìm Hiểu Thêm Về Chúng Tôi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
+                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Fragment -->
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+
+</body>
+</html>

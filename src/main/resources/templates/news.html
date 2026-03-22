@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head(title='Tin Tức | S-Housing Clone', description='Cập nhật các kiến thức, xu hướng và mẹo vặt trang trí không gian sống.', keywords='tin tức nội thất, xu hướng 2026', image='/images/news_hero.png')}"></head>
+<body>
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <main>
+        <section class="interior-hero" style="background-image: url('/images/news_hero.png');">
+            <div class="hero-overlay"></div>
+            <h1>Tin Tức & Kiến Thức</h1>
+        </section>
+
+        <section class="page-content container">
+            <div class="content-block">
+                <h2>Xu Hướng Thiết Kế 2026</h2>
+                <p>Năm 2026 đang chứng kiến sự bùng nổ của thiết kế xanh, vật liệu tái chế kết hợp với các hình khối mềm mại (Curve Design).</p>
+                <a href="#" style="font-weight: bold; color: var(--primary-color);">Đọc thêm -></a>
+            </div>
+            <div class="content-block" style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+                <h2>Cách Bố Trí Phòng Khách Chuẩn Phong Thủy</h2>
+                <p>Màu sắc tường nhà, hướng bàn ghế sofa ảnh hưởng lớn đến vận khí. Hãy cùng chuyên gia S-Housing tìm hiểu các mẹo này.</p>
+                <a href="#" style="font-weight: bold; color: var(--primary-color);">Đọc thêm -></a>
+            </div>
+        </section>
+        <!-- Dynamic CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
+                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+            </div>
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head(title='Thiết Kế Nội Thất | S-Housing Clone', description='Dịch vụ thiết kế nội thất chung cư, nhà phố, biệt thự chuyên nghiệp nâng tầm không gian.', keywords='thiết kế nội thất, nội thất cao cấp', image='/images/design_hero.png')}"></head>
+<body>
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <main>
+        <section class="interior-hero" style="background-image: url('/images/design_hero.png');">
+            <div class="hero-overlay"></div>
+            <h1>Thiết Kế Nội Thất</h1>
+        </section>
+
+        <section class="page-content container">
+            <div class="content-block">
+                <h2>Cá Nhân Hóa Không Gian Sống</h2>
+                <p>Các kiến trúc sư tại S-Housing không chỉ thiết kế, mà còn lắng nghe nhu cầu của bạn để tạo ra những bản thiết kế độc bản, tối ưu hóa công năng và mang đậm dấu ấn cá nhân.</p>
+            </div>
+            <div class="services-grid" style="margin-top: 40px;">
+                <div class="service-card">
+                    <h3>Chung Cư</h3>
+                    <p>Tối ưu không gian, mở rộng góc nhìn, đa năng và tiện dụng.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Biệt Thự</h3>
+                    <p>Đẳng cấp, sang trọng, thể hiện phong thái hoàng gia hoặc hiện đại.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Nhà Phố</h3>
+                    <p>Khắc phục nhược điểm về diện tích, tạo độ thoáng và đón sáng tự nhiên.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Dynamic CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
+                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+            </div>
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+</html>

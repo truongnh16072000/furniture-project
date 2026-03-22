@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head(title='Dự Án Đã Thực Hiện | S-Housing Clone', description='Bộ sưu tập các dự án khủng, biệt thự, nhà phố mang thương hiệu S-Housing.', keywords='dự án nội thất', image='/images/projects_hero.png')}"></head>
+<body>
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <main>
+        <section class="interior-hero" style="background-image: url('/images/projects_hero.png');">
+            <div class="hero-overlay"></div>
+            <h1>Dự Án Nổi Bật</h1>
+        </section>
+
+        <section class="page-content container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="/images/project_villa.png" alt="Dự án biệt thự" style="width: 100%; border-radius: 8px; margin-bottom: 15px;" />
+                    <h3>Biệt Thự Vinhomes</h3>
+                    <p>Hoàn thiện toàn bộ nội thất cao cấp gỗ Óc chó (Walnut), tích hợp đèn thông minh.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/images/project_townhouse.png" alt="Dự án nhà phố" style="width: 100%; border-radius: 8px; margin-bottom: 15px;" />
+                    <h3>Nhà Phố Quận 2</h3>
+                    <p>Thiết kế không gian mở đón ánh sáng, ứng dụng Phong Thủy toàn diện.</p>
+                </div>
+                <div class="service-card">
+                    <img src="/images/project_apartment.png" alt="Dự án chung cư" style="width: 100%; border-radius: 8px; margin-bottom: 15px;" />
+                    <h3>Landmark 81 Apartment</h3>
+                    <p>Bố cục nội thất tối giản (Minimalism) kết hợp 4D VR trước khi chốt bản vẽ sản xuất.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Dynamic CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
+                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+            </div>
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<header th:fragment="header" class="site-header" id="siteHeader">
+    <div class="container">
+        <div class="header-inner">
+            <div class="header-logo">
+                <a th:href="@{/}">
+                    <h2>S<span class="logo-dot">.</span>Housing</h2>
+                </a>
+            </div>
+            
+            <nav class="header-nav" id="headerNav">
+                <ul>
+                    <li><a th:href="@{/}" class="nav-link">Trang Chủ</a></li>
+                    <li><a th:href="@{/ve-chung-toi}" class="nav-link">Về Chúng Tôi</a></li>
+                    <li><a th:href="@{/thiet-ke-noi-that}" class="nav-link">Thiết Kế Nội Thất</a></li>
+                    <li><a th:href="@{/thi-cong-noi-that}" class="nav-link">Thi Công Nội Thất</a></li>
+                    <li><a th:href="@{/phong-thuy}" class="nav-link">Phong Thủy</a></li>
+                    <li><a th:href="@{/du-an}" class="nav-link">Dự Án</a></li>
+                    <li><a th:href="@{/tin-tuc}" class="nav-link">Tin Tức</a></li>
+                    <li><a th:href="@{/lien-he}" class="nav-link">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-action">
+                <a href="tel:0901234567" class="btn btn-primary pulse-btn">Nhận Tư Vấn</a>
+                <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Mở menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Highlight current active link
+            const currentPath = window.location.pathname.replace(/\/$/, '') || '/';
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                const linkUrl = new URL(link.href, window.location.origin);
+                const linkPath = linkUrl.pathname.replace(/\/$/, '') || '/';
+                
+                if (linkPath === currentPath || (linkPath !== '/' && currentPath.startsWith(linkPath))) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // Mobile Menu Toggle
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const headerNav = document.getElementById('headerNav');
+            
+            if(mobileBtn && headerNav) {
+                mobileBtn.addEventListener('click', () => {
+                    headerNav.classList.toggle('active');
+                    mobileBtn.classList.toggle('open');
+                });
+            }
+
+            // Shrink header on scroll
+            const header = document.getElementById('siteHeader');
+            const SCROLL_THRESHOLD = 50;
+            
+            if(header) {
+                const onScroll = () => {
+                    if (window.scrollY > SCROLL_THRESHOLD) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                };
+                window.addEventListener('scroll', onScroll);
+                onScroll(); // initial check
+            }
+        });
+    </script>
+</header>
+</body>
+</html>

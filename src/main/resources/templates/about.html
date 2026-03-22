@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head(title='Về Chúng Tôi | S-Housing Clone', description='Tìm hiểu về lịch sử, sứ mệnh và đội ngũ kiến trúc sư của S-Housing.', keywords='về chúng tôi, s-housing, kiến trúc sư', image='/images/about_hero.png')}"></head>
+<body>
+    <header th:replace="~{fragments/header :: header}"></header>
+
+    <main>
+        <section class="interior-hero" style="background-image: url('/images/about_hero.png');">
+            <div class="hero-overlay"></div>
+            <h1>Về Chúng Tôi</h1>
+        </section>
+
+        <section class="page-content container">
+            <div class="content-block">
+                <h2>Lịch Sử Hình Thành</h2>
+                <p>Khởi đầu từ một đội ngũ nhỏ đam mê kiến trúc và không gian sống, S-Housing Clone đã vươn lên thành một trong những đơn vị dẫn đầu về thi công nội thất phong thủy trọn gói tại Việt Nam.</p>
+            </div>
+            <div class="content-block">
+                <h2>Tầm Nhìn & Sứ Mệnh</h2>
+                <p>Chúng tôi cam kết mang lại không gian sống hoàn mỹ, ứng dụng công nghệ hiện đại 4D VR, giúp khách hàng thấy trước được tổ ấm tương lai một cách vô cùng chân thực và trực quan.</p>
+            </div>
+        </section>
+        <!-- Dynamic CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
+                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+            </div>
+        </section>
+    </main>
+
+    <footer th:replace="~{fragments/footer :: footer}"></footer>
+</body>
+</html>
