@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: head(title='Phong Thủy | S-Housing Clone', description='Tư vấn phong thủy chuẩn xác đem lại tài vận cho không gian sống.', keywords='phong thủy nội thất', image='/images/feng_shui_hero.png')}"></head>
+<head th:replace="~{fragments/head :: head(title='Phong Thủy | TT. Furniture Clone', description='Tư vấn phong thủy chuẩn xác đem lại tài vận cho không gian sống.', keywords='phong thủy nội thất', image='/images/feng_shui_hero.png')}"></head>
 <body>
     <header th:replace="~{fragments/header :: header}"></header>
 
@@ -23,7 +23,7 @@
 
             <div class="content-block text-center" style="margin-top: 80px;">
                 <h2 style="font-size: 32px; margin-bottom: 40px;" th:text="${settings.fengShui.consult.title}">Dịch Vụ Tư Vấn Đặc Biệt</h2>
-                <p style="max-width: 800px; margin: 0 auto; font-size: 18px;" th:text="${settings.fengShui.consult.desc}">Khi lựa chọn thi công tại S-Housing...</p>
+                <p style="max-width: 800px; margin: 0 auto; font-size: 18px;" th:text="${settings.fengShui.consult.desc}">Khi lựa chọn thi công tại TT. Furniture...</p>
                 
                 <div class="services-grid" style="margin-top: 40px;">
                     <div th:each="service : ${settings.fengShui.consult.services}" class="service-card" th:classappend="${service['highlight']} ? 'highlight' : ''">

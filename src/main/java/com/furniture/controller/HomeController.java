@@ -71,4 +71,11 @@ public class HomeController {
     public String contact() {
         return "contact";
     }
+
+    @org.springframework.web.bind.annotation.PostMapping("/lien-he")
+    public String handleContact(@org.springframework.web.bind.annotation.RequestParam Map<String, String> params, org.springframework.ui.Model model) {
+        System.out.println("Form submission received: " + params);
+        model.addAttribute("success", "Cảm ơn bạn! Yêu cầu của bạn đã được gửi thành công. Chúng tôi sẽ liên hệ lại sớm nhất.");
+        return "contact";
+    }
 }

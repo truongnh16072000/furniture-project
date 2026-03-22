@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: head(title='Thi Công Nội Thất | S-Housing Clone', description='Nhà thầu thi công nội thất trọn gói, trực tiếp sản xuất từ xưởng Củ Chi.', keywords='thi công nội thất', image='/images/construction_hero.png')}"></head>
+<head th:replace="~{fragments/head :: head(title='Thi Công Nội Thất | TT. Furniture Clone', description='Nhà thầu thi công nội thất trọn gói, trực tiếp sản xuất từ xưởng Củ Chi.', keywords='thi công nội thất', image='/images/construction_hero.png')}"></head>
 <body>
     <header th:replace="~{fragments/header :: header}"></header>
 
@@ -20,7 +20,7 @@
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img th:src="@{${settings.construction.facility.image}}" alt="S-Housing Factory Production" style="border-radius: 15px; box-shadow: var(--shadow);" />
+                    <img th:src="@{${settings.construction.facility.image}}" alt="TT. Furniture Factory Production" style="border-radius: 15px; box-shadow: var(--shadow);" />
                 </div>
             </div>
             
@@ -38,7 +38,7 @@
             </div>
 
             <div class="content-block text-center" style="margin-top: 100px;">
-                <h2 style="font-size: 32px; margin-bottom: 40px;" th:text="${settings.construction.whyChoose.title}">Tại Sao Chọn Thi Công Tại S-Housing?</h2>
+                <h2 style="font-size: 32px; margin-bottom: 40px;" th:text="${settings.construction.whyChoose.title}">Tại Sao Chọn Thi Công Tại TT. Furniture?</h2>
                 <div class="services-grid">
                     <div th:each="service : ${settings.construction.whyChoose.services}" class="service-card" th:classappend="${service['highlight']} ? 'highlight' : ''">
                         <div class="icon" th:text="${service.icon}">🔍</div>

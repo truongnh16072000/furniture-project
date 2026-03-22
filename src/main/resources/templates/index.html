@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <!-- head fragment included with parameters for title, description, keywords, image -->
-<head th:replace="~{fragments/head :: head(title='Thiết Kế Thi Công Nội Thất Trọn Gói S-Housing | Clone', description='S-housing cung cấp dịch vụ thiết kế và thi công nội thất chuyên nghiệp.', keywords='thiết kế nội thất, thi công nội thất, s-housing', image='/images/hero.png')}">
+<head th:replace="~{fragments/head :: head(title='Thiết Kế Thi Công Nội Thất Trọn Gói TT. Furniture | Clone', description='S-housing cung cấp dịch vụ thiết kế và thi công nội thất chuyên nghiệp.', keywords='thiết kế nội thất, thi công nội thất, s-housing', image='/images/hero.png')}">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
         <!-- Services Features -->
         <section class="services-section">
             <div class="container text-center section-header">
-                <h2 th:text="${settings.index.services.title}">Dịch Vụ Nổi Bật Tại S-Housing</h2>
+                <h2 th:text="${settings.index.services.title}">Dịch Vụ Nổi Bật Tại TT. Furniture</h2>
                 <p th:text="${settings.index.services.subtitle}">Khẳng định chất lượng qua từng không gian sống</p>
             </div>
             
@@ -55,7 +55,7 @@
         <section class="success-gallery">
             <div class="container text-center section-header">
                 <h2 th:utext="${settings.index.successGallery.title}">Dự Án Tiêu Biểu</h2>
-                <p th:text="${settings.index.successGallery.subtitle}">Những công trình đã khẳng định vị thế và tâm huyết của S-Housing</p>
+                <p th:text="${settings.index.successGallery.subtitle}">Những công trình đã khẳng định vị thế và tâm huyết của TT. Furniture</p>
             </div>
             <div class="container gallery-grid">
                 <div class="gallery-item" th:each="item : ${settings.index.successGallery.items}" 
@@ -66,7 +66,7 @@
                     <div class="gallery-overlay">
                         <h3 th:text="${item.title}">Villa Vinhomes Grand Park</h3>
                         <p th:text="${item.desc}">Phong cách Tân cổ điển lịch lãm...</p>
-                        <span class="view-details">Xem chi tiết &rarr;</span>
+                        <span class="view-details">Xem chi tiết</span>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
         <section class="about-section" style="background-color: var(--bg-white); padding-bottom: 0;">
             <div class="container flex-row" style="align-items: center;">
                 <div class="about-image" style="position: relative;">
-                    <img th:src="@{${settings.index.about.image}}" alt="Thi công nội thất S-Housing" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
+                    <img th:src="@{${settings.index.about.image}}" alt="Thi công nội thất TT. Furniture" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
                     <div style="position: absolute; bottom: -30px; right: -30px; background: var(--primary-color); color: white; padding: 30px; border-radius: 50%; width: 140px; height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(201, 147, 57, 0.4);">
                         <strong style="font-size: 32px; line-height: 1;" th:text="${settings.index.about.expValue}">10+</strong>
                         <span style="font-size: 14px; text-align: center;" th:text="${settings.index.about.expLabel}">Năm Kinh Nghiệm</span>
@@ -99,7 +99,7 @@
             <div class="container">
                 <div class="section-header text-center">
                     <h2 style="font-size: 42px;" th:utext="${settings.index.materials.title}">Vật Liệu Thượng Hạng</h2>
-                    <p style="max-width: 700px; margin: 0 auto 60px auto;" th:text="${settings.index.materials.subtitle}">S-Housing tuyển chọn những nguồn nguyên liệu cao cấp nhất...</p>
+                    <p style="max-width: 700px; margin: 0 auto 60px auto;" th:text="${settings.index.materials.subtitle}">TT. Furniture tuyển chọn những nguồn nguyên liệu cao cấp nhất...</p>
                 </div>
 
                 <div class="materials-grid">

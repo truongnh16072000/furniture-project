@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: head(title='Dự Án Đã Thực Hiện | S-Housing Clone', description='Bộ sưu tập các dự án khủng, biệt thự, nhà phố mang thương hiệu S-Housing.', keywords='dự án nội thất', image='/images/projects_hero.png')}"></head>
+<head th:replace="~{fragments/head :: head(title='Dự Án Đã Thực Hiện | TT. Furniture Clone', description='Bộ sưu tập các dự án khủng, biệt thự, nhà phố mang thương hiệu TT. Furniture.', keywords='dự án nội thất', image='/images/projects_hero.png')}"></head>
 <body>
     <header th:replace="~{fragments/header :: header}"></header>
 
@@ -28,7 +28,7 @@
                         <div class="project-content">
                             <h3 th:text="${item.title}">Project Title</h3>
                             <p th:text="${item.desc}">Project description...</p>
-                            <span class="view-details" style="color: var(--primary-color); font-weight: 700; border-bottom: 2px solid var(--primary-color); display: inline-block; margin-top: 10px;">Xem chi tiết &rarr;</span>
+                            <span class="view-details">Xem chi tiết</span>
                         </div>
                     </div>
                 </div>

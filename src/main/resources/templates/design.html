@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="~{fragments/head :: head(title='Thiết Kế Nội Thất | S-Housing Clone', description='Dịch vụ thiết kế nội thất chung cư, nhà phố, biệt thự chuyên nghiệp nâng tầm không gian.', keywords='thiết kế nội thất, nội thất cao cấp', image='/images/design_hero.png')}"></head>
+<head th:replace="~{fragments/head :: head(title='Thiết Kế Nội Thất | TT. Furniture Clone', description='Dịch vụ thiết kế nội thất chung cư, nhà phố, biệt thự chuyên nghiệp nâng tầm không gian.', keywords='thiết kế nội thất, nội thất cao cấp', image='/images/design_hero.png')}"></head>
 <body>
     <header th:replace="~{fragments/header :: header}"></header>
 
@@ -14,7 +14,7 @@
             <div class="flex-row">
                 <div class="about-text">
                     <h2 style="color: var(--primary-color);" th:text="${settings.design.intro.title}">Cá Nhân Hóa Không Gian Sống</h2>
-                    <p th:text="${settings.design.intro.desc}">Các kiến trúc sư tại S-Housing không chỉ thiết kế...</p>
+                    <p th:text="${settings.design.intro.desc}">Các kiến trúc sư tại TT. Furniture không chỉ thiết kế...</p>
                 </div>
                 <div class="about-image">
                     <img th:src="@{${settings.design.intro.image}}" alt="Thiết kế nội thất cao cấp" style="border-radius: 15px; box-shadow: var(--shadow);" />
@@ -23,7 +23,7 @@
 
             <div class="content-block text-center" style="margin-top: 100px;">
                 <h2 style="font-size: 42px; margin-bottom: 20px;">Dự Án Theo <span style="color: var(--primary-color);">Hạng Mục</span></h2>
-                <p style="color: var(--text-light); max-width: 700px; margin: 0 auto 80px auto; font-size: 18px;">Mỗi hạng mục công trình đều được S-Housing nghiên cứu kỹ lưỡng để đưa ra giải pháp tối ưu nhất về thẩm mỹ và công năng.</p>
+                <p style="color: var(--text-light); max-width: 700px; margin: 0 auto 80px auto; font-size: 18px;">Mỗi hạng mục công trình đều được TT. Furniture nghiên cứu kỹ lưỡng để đưa ra giải pháp tối ưu nhất về thẩm mỹ và công năng.</p>
                 
                 <!-- Dynamic Categories -->
                 <div th:each="category, iter : ${settings.design.categories}" th:class="${iter.index % 2 != 0} ? 'category-section alt' : 'category-section'">
@@ -40,7 +40,7 @@
                             <div class="project-content">
                                 <h3 th:text="${project.title}">Project Title</h3>
                                 <p th:text="${project.desc}">Project description...</p>
-                                <span class="view-details" style="color: var(--primary-color); font-weight: 700; border-bottom: 2px solid var(--primary-color); display: inline-block; margin-top: 10px;">Xem chi tiết &rarr;</span>
+                                <span class="view-details">Xem chi tiết</span>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
             <div class="flex-row" style="background: var(--secondary-color); color: white; padding: 60px; border-radius: 30px; align-items: center;">
                 <div class="about-text" style="color: white;">
                     <h2 style="color: var(--primary-color); font-size: 36px;" th:text="${settings.design.vrSection.title}">Trải Nghiệm VR 4D</h2>
-                    <p style="color: rgba(255,255,255,0.8); font-size: 18px;" th:text="${settings.design.vrSection.desc}">Tại S-Housing, bạn không chỉ 'nhìn' thấy ngôi nhà...</p>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 18px;" th:text="${settings.design.vrSection.desc}">Tại TT. Furniture, bạn không chỉ 'nhìn' thấy ngôi nhà...</p>
                     <ul class="check-list" style="margin-top: 20px;">
                         <li th:each="point : ${settings.design.vrSection.points}" style="color: white;" th:text="${point}">Point</li>
                     </ul>

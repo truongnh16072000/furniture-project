@@ -1,10 +1,10 @@
 {
   "site": {
-    "name": "S.Housing",
+    "name": "TT. Furniture",
     "dotColor": "var(--primary-color)",
     "phone": "0901234567",
     "email": "info@shousing-clone.vn",
-    "address": "123 Đường Số 1, Phường 2, TP.Thủ Đức",
+    "address": "Bình Phú, Thạch Thất, Hà Nội, Việt Nam",
     "factory": "KCN Tây Bắc Củ Chi, TP. HCM",
     "messenger": "https://m.me/shousing",
     "zalo": "https://zalo.me/0901234567"
@@ -34,7 +34,7 @@
       {"value": "100%", "label": "Sự Hài Lòng"}
     ],
     "services": {
-      "title": "Dịch Vụ Nổi Bật Tại S-Housing",
+      "title": "Dịch Vụ Nổi Bật Tại TT. Furniture",
       "subtitle": "Khẳng định chất lượng qua từng không gian sống",
       "items": [
         {"icon": "📐", "title": "Thiết Kế Nội Thất", "desc": "Sáng tạo không gian mang đậm dấu ấn cá nhân, tối ưu hóa công năng và thẩm mỹ."},
@@ -48,7 +48,7 @@
       ]
     },
     "about": {
-      "title": "Vì Sao Khách Hàng Chọn <br/><span style='color: var(--primary-color);'>S.Housing?</span>",
+      "title": "Vì Sao Khách Hàng Chọn <br/><span style='color: var(--primary-color);'>TT. Furniture?</span>",
       "desc": "Chúng tôi không chỉ cung cấp dịch vụ thiết kế đơn thuần, mà tạo ra giá trị sống đích thực. Bằng việc kết hợp đội ngũ KTS giàu kinh nghiệm, tư vấn phong thủy bài bản và ứng dụng công nghệ hiện đại mang tính đột phá.",
       "image": "/images/about_architecture.png",
       "expValue": "10+",
@@ -63,7 +63,7 @@
     },
     "materials": {
       "title": "Vật Liệu <span style='color: var(--primary-color);'>Thượng Hạng</span>",
-      "subtitle": "S-Housing tuyển chọn những nguồn nguyên liệu cao cấp nhất, đảm bảo tính thẩm mỹ vượt trội và độ bền vĩnh cửu cho mọi công trình.",
+      "subtitle": "TT. Furniture tuyển chọn những nguồn nguyên liệu cao cấp nhất, đảm bảo tính thẩm mỹ vượt trội và độ bền vĩnh cửu cho mọi công trình.",
       "items": [
         {
           "image": "/images/material_wood.png",
@@ -99,7 +99,7 @@
     },
     "successGallery": {
       "title": "Dự Án <span style='color: var(--primary-color);'>Tiêu Biểu</span>",
-      "subtitle": "Những công trình đã khẳng định vị thế và tâm huyết của S-Housing",
+      "subtitle": "Những công trình đã khẳng định vị thế và tâm huyết của TT. Furniture",
       "items": [
         {
           "images": [
@@ -171,7 +171,7 @@
     },
     "cta": {
       "title": "Sẵn Sàng Kiến Tạo Không Gian Của Bạn?",
-      "subtitle": "Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S-Housing.",
+      "subtitle": "Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của TT. Furniture.",
       "btnLabel": "Liên Hệ Tư Vấn Miễn Phí"
     }
   },
@@ -182,7 +182,7 @@
     },
     "intro": {
       "title": "Cá Nhân Hóa Không Gian Sống",
-      "desc": "Các kiến trúc sư tại S-Housing không chỉ thiết kế, mà còn lắng nghe nhu cầu của bạn để tạo ra những bản thiết kế độc bản, tối ưu hóa công năng và mang đậm dấu ấn cá nhân. Chúng tôi tin rằng cái đẹp phải đi đôi với sự tiện dụng.",
+      "desc": "Các kiến trúc sư tại TT. Furniture không chỉ thiết kế, mà còn lắng nghe nhu cầu của bạn để tạo ra những bản thiết kế độc bản, tối ưu hóa công năng và mang đậm dấu ấn cá nhân. Chúng tôi tin rằng cái đẹp phải đi đôi với sự tiện dụng.",
       "image": "/images/furniture_living_room.png"
     },
     "categories": [
@@ -198,6 +198,16 @@
             "images": ["/images/project_apartment_2.png", "/images/project_apartment_1.png", "/images/project_penthouse_3.png", "/images/furniture_bedroom.png", "/images/project_kitchen_luxury.png"],
             "title": "Urban Luxe Studio",
             "desc": "Studio cao cấp tối giản, tích hợp nội thất thông minh cho lối sống năng động và hiện đại."
+          },
+          {
+            "images": ["/images/project_penthouse_3.png", "/images/project_apartment_2.png", "/images/furniture_living_room.png", "/images/project_apartment_1.png", "/images/project_kitchen_luxury.png"],
+            "title": "Minimalist Zen Condo",
+            "desc": "Không gian tối giản lấy cảm hứng từ phong cách Nhật Bản, mang lại sự tĩnh lặng và cân bằng tuyệt đối cho tâm hồn."
+          },
+          {
+            "images": ["/images/project_apartment_1.png", "/images/project_apartment_2.png", "/images/project_townhouse_2.png", "/images/furniture_bedroom.png", "/images/project_library_luxury.png"],
+            "title": "Modern Skyline Loft",
+            "desc": "Căn hộ Loft thông tầng với cửa kính lớn, tận dụng tối đa tầm nhìn thành phố và ánh sáng rực rỡ."
           }
         ]
       },
@@ -213,6 +223,16 @@
             "images": ["/images/project_villa_2.png", "/images/project_villa_1.png", "/images/project_villa_3.png", "/images/project_villa_lake.png", "/images/about_hero.png"],
             "title": "Modern Tropical Retreat",
             "desc": "Biệt thự nhiệt đới hiện đại, kết nối thiên nhiên và không gian sống mở khoáng đạt."
+          },
+          {
+            "images": ["/images/project_villa.png", "/images/project_villa_lake.png", "/images/project_villa_1.png", "/images/material_wood.png", "/images/about_factory.png"],
+            "title": "Regal Classic Mansion",
+            "desc": "Biệt thự phong cách hoàng gia với nội thất gỗ quý hiếm, hoa văn chạm khắc thủ công tinh xảo trong từng mét vuông."
+          },
+          {
+            "images": ["/images/project_villa_3.png", "/images/project_villa_2.png", "/images/project_eco_house.png", "/images/material_marble.png", "/images/hero.png"],
+            "title": "Eco-Luxe Forest Villa",
+            "desc": "Kiến trúc xanh bền vững, sử dụng vật liệu cao cấp và hệ thống thông gió tự nhiên, kết nối hài hòa với thiên nhiên."
           }
         ]
       },
@@ -228,13 +248,23 @@
             "images": ["/images/project_townhouse_2.png", "/images/project_townhouse_1.png", "/images/project_townhouse_3.png", "/images/project_townhouse.png", "/images/material_wood.png"],
             "title": "Industrial Edge",
             "desc": "Nhà phố phong cách Công nghiệp đương đại, cá tính và đầy đột phá trong từng chi tiết."
+          },
+          {
+            "images": ["/images/project_townhouse.png", "/images/project_townhouse_3.png", "/images/project_office_hub.png", "/images/material_leather.png", "/images/cta_bg.png"],
+            "title": "Geometric Modern House",
+            "desc": "Nhà phố khối hộp đương đại với những đường nét kiến trúc mạnh mẽ, phá cách và không gian chức năng thông minh."
+          },
+          {
+            "images": ["/images/project_townhouse_1.png", "/images/project_townhouse_2.png", "/images/project_apartment_1.png", "/images/furniture_living_room.png", "/images/project_townhouse_3.png"],
+            "title": "Heritage Fusion Home",
+            "desc": "Sự kết hợp hoàn hảo giữa nét đẹp truyền thống Đông Á và các tiện nghi sống hiện đại, kiến tạo không gian ấm cúng."
           }
         ]
       }
     ],
     "vrSection": {
       "title": "Trải Nghiệm VR 4D",
-      "desc": "Tại S-Housing, bạn không chỉ nhìn thấy ngôi nhà qua bản vẽ 2D hay 3D thông thường. Với công nghệ VR 4D, bạn sẽ được bước vào không gian sống tương lai, cảm nhận tỷ lệ vật dụng và ánh sáng một cách thực tế nhất trước khi đặt bút ký hợp đồng thi công.",
+      "desc": "Tại TT. Furniture, bạn không chỉ nhìn thấy ngôi nhà qua bản vẽ 2D hay 3D thông thường. Với công nghệ VR 4D, bạn sẽ được bước vào không gian sống tương lai, cảm nhận tỷ lệ vật dụng và ánh sáng một cách thực tế nhất trước khi đặt bút ký hợp đồng thi công.",
       "image": "/images/design_vr.png",
       "points": [
         "Tránh sai sót về không gian",
@@ -248,7 +278,7 @@
     "sections": [
       {
         "title": "Lịch Sử Hình Thành",
-        "desc": "Khởi đầu từ một đội ngũ nhỏ đam mê kiến trúc và không gian sống, S-Housing Clone đã vươn lên thành một trong những đơn vị dẫn đầu về thi công nội thất phong thủy trọn gói tại Việt Nam. Chúng tôi tin rằng mỗi ngôi nhà đều kể một câu chuyện riêng, và chúng tôi ở đây để giúp bạn viết nên câu chuyện đó.",
+        "desc": "Khởi đầu từ một đội ngũ nhỏ đam mê kiến trúc và không gian sống, TT. Furniture đã vươn lên thành một trong những đơn vị dẫn đầu về thi công nội thất phong thủy trọn gói tại Việt Nam. Chúng tôi tin rằng mỗi ngôi nhà đều kể một câu chuyện riêng, và chúng tôi ở đây để giúp bạn viết nên câu chuyện đó.",
         "image": "/images/about_studio.png",
         "reverse": false
       },
@@ -277,7 +307,7 @@
       { "title": "Hotline Tư Vấn 24/7", "value": "090 123 4567", "link": "tel:0901234567", "linkLabel": "Gọi ngay", "icon": "phone" },
       { "title": "Chat Zalo Trực Tiếp", "value": "Nhận báo giá & bản vẽ mẫu", "link": "https://zalo.me/0901234567", "linkLabel": "Nhắn tin qua Zalo", "icon": "zalo", "color": "#0068FF" },
       { "title": "Email Chăm Sóc KH", "value": "info@shousing-clone.vn", "link": "mailto:info@shousing-clone.vn", "linkLabel": "Gửi email", "icon": "email" },
-      { "title": "Trụ Sở Chính & Showroom", "value": "123 Đường Số 1, TP Thủ Đức", "link": "#map", "linkLabel": "Chỉ đường", "icon": "map" }
+      { "title": "Trụ Sở Chính & Showroom", "value": "Bình Phú, Thạch Thất, Hà Nội, Việt Nam", "link": "#map", "linkLabel": "Chỉ đường", "icon": "map" }
     ],
     "form": {
       "title": "Bạn Cần Thiết Kế & Thi Công?",
@@ -290,7 +320,7 @@
     "sections": [
       {
         "title": "Dự Án Nội Thất & Đồ Gỗ Cao Cấp",
-        "subtitle": "Khám phá bộ sưu tập các không gian nội thất được thiết kế và sản xuất trực tiếp bởi S-Housing.",
+        "subtitle": "Khám phá bộ sưu tập các không gian nội thất được thiết kế và sản xuất trực tiếp bởi TT. Furniture.",
         "items": [
           { "images": ["/images/furniture_living_room.png", "/images/project_apartment_2.png", "/images/project_apartment_1.png", "/images/project_apartment.png", "/images/project_penthouse_3.png"], "title": "Phòng Khách Luxury", "desc": "Không gian mở với sofa da cao cấp, bàn trà minimalist and tủ TV gỗ óc chó nguyên khối." },
           { "images": ["/images/furniture_kitchen.png", "/images/project_kitchen_luxury.png", "/images/project_dining_luxury.png", "/images/material_wood.png", "/images/hero.png"], "title": "Không Gian Bếp Walnut", "desc": "Hệ tủ bếp gỗ óc chó thượng hạng kết hợp mặt đá marble tự nhiên nguyên khối." },
@@ -302,7 +332,7 @@
       },
       {
         "title": "Dự Án Thiết Kế & Thi Công Tổng Thể",
-        "subtitle": "Những công trình biệt thự, nhà phố and căn hộ cao cấp mang dấu ấn S-Housing.",
+        "subtitle": "Những công trình biệt thự, nhà phố and căn hộ cao cấp mang dấu ấn TT. Furniture.",
         "items": [
           { "images": ["/images/project_villa_1.png", "/images/project_villa_2.png", "/images/project_villa_3.png", "/images/project_villa_lake.png", "/images/project_villa.png"], "title": "Biệt Thự Vinhomes", "desc": "Hoàn thiện toàn bộ nội thất cao cấp gỗ Óc chó (Walnut), tích hợp đèn thông minh." },
           { "images": ["/images/project_townhouse_1.png", "/images/project_townhouse_2.png", "/images/project_townhouse_3.png", "/images/project_townhouse.png", "/images/project_office_hub.png"], "title": "Nhà Phố Quận 2", "desc": "Thiết kế không gian mở đón ánh sáng, ứng dụng Phong Thủy toàn diện." },
@@ -331,7 +361,7 @@
     },
     "consult": {
       "title": "Dịch Vụ Tư Vấn Đặc Biệt",
-      "desc": "Khi lựa chọn thi công tại S-Housing, gia chủ sẽ được chuyên gia phong thủy của chúng tôi tư vấn các nguyên tắc vàng để đón cát, tránh hung:",
+      "desc": "Khi lựa chọn thi công tại TT. Furniture, gia chủ sẽ được chuyên gia phong thủy của chúng tôi tư vấn các nguyên tắc vàng để đón cát, tránh hung:",
       "services": [
         { "icon": "🛌", "title": "Vị Trí Kê Giường", "desc": "Đảm bảo giấc ngủ sâu, tái tạo năng lượng and sức khỏe dồi dào." },
         { "icon": "🔥", "title": "Hướng Bếp", "desc": "Giữ lửa hạnh phúc, thúc đẩy tài vận and hòa khí trong gia đình." },
@@ -343,13 +373,13 @@
     "hero": { "title": "Thi Công Nội Thất", "bgImage": "/images/construction_hero.png" },
     "facility": {
       "title": "Cơ Sở Vật Chất Hiện Đại",
-      "desc": "Khác với các đơn vị thiết kế thuê ngoài, S-Housing sở hữu xưởng sản xuất quy mô lớn tại Củ Chi với dàn máy móc CNC hiện đại, giúp kiểm soát 100% chất lượng từ nguyên liệu đến thành phẩm. Điều này giúp chúng tôi đảm bảo tiến độ and cam kết không phát sinh chi phí.",
+      "desc": "Khác với các đơn vị thiết kế thuê ngoài, TT. Furniture sở hữu xưởng sản xuất quy mô lớn tại Củ Chi với dàn máy móc CNC hiện đại, giúp kiểm soát 100% chất lượng từ nguyên liệu đến thành phẩm. Điều này giúp chúng tôi đảm bảo tiến độ and cam kết không phát sinh chi phí.",
       "image": "/images/about_factory.png",
       "points": ["Gỗ An Cường chính hãng tiêu chuẩn E1", "Phụ kiện Hafele, Blum cao cấp", "Sơn không mùi, an toàn sức khỏe"]
     },
     "process": {
       "title": "Quy Trình Thi Công Chuẩn Mực",
-      "desc": "Tại mỗi công trình, chúng tôi luôn có kỹ sư giám sát 24/7 để đảm bảo bản vẽ thiết kế được hiện thực hóa một cách chính xác nhất. Sự tỉ mỉ trong từng đường chỉ, mối ghép là điều tạo nên thương hiệu S-Housing.",
+      "desc": "Tại mỗi công trình, chúng tôi luôn có kỹ sư giám sát 24/7 để đảm bảo bản vẽ thiết kế được hiện thực hóa một cách chính xác nhất. Sự tỉ mỉ trong từng đường chỉ, mối ghép là điều tạo nên thương hiệu TT. Furniture.",
       "image": "/images/construction_progress.png",
       "steps": [
         "1. Khảo sát hiện trạng and đo đạc kỹ lưỡng.",
@@ -359,7 +389,7 @@
       ]
     },
     "whyChoose": {
-      "title": "Tại Sao Chọn Thi Công Tại S-Housing?",
+      "title": "Tại Sao Chọn Thi Công Tại TT. Furniture?",
       "services": [
         { "icon": "🔍", "title": "Chất Lượng Cam Kết", "desc": "Sử dụng 100% vật liệu đúng theo hợp đồng, bồi thường nếu phát hiện hàng giả." },
         { "icon": "⏱️", "title": "Đúng Tiến Độ", "desc": "Quy trình khép kín giúp chủ động thời gian, bàn giao ngôi nhà đúng hẹn." },
