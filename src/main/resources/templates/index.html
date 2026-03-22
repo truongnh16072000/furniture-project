@@ -51,7 +51,28 @@
             </div>
         </section>
 
-        <!-- About Intro Section -->
+        <!-- Success Story Highlights (Featured Projects) -->
+        <section class="success-gallery">
+            <div class="container text-center section-header">
+                <h2 th:utext="${settings.index.successGallery.title}">Dự Án Tiêu Biểu</h2>
+                <p th:text="${settings.index.successGallery.subtitle}">Những công trình đã khẳng định vị thế và tâm huyết của S-Housing</p>
+            </div>
+            <div class="container gallery-grid">
+                <div class="gallery-item" th:each="item : ${settings.index.successGallery.items}" 
+                     th:data-images="${#strings.arrayJoin(item.images, ',')}"
+                     th:data-title="${item.title}"
+                     onclick="openProjectLightbox(this)">
+                    <img th:src="@{${item.images[0]}}" th:alt="${item.title}" />
+                    <div class="gallery-overlay">
+                        <h3 th:text="${item.title}">Villa Vinhomes Grand Park</h3>
+                        <p th:text="${item.desc}">Phong cách Tân cổ điển lịch lãm...</p>
+                        <span class="view-details">Xem chi tiết &rarr;</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Intro Section (Why Choose Us) -->
         <section class="about-section" style="background-color: var(--bg-white); padding-bottom: 0;">
             <div class="container flex-row" style="align-items: center;">
                 <div class="about-image" style="position: relative;">
@@ -110,22 +131,6 @@
             </div>
         </section>
 
-        <!-- Success Story Highlights (Full-Width Gallery) -->
-        <section class="success-gallery">
-            <div class="container text-center section-header">
-                <h2 th:utext="${settings.index.successGallery.title}">Dự Án Tiêu Biểu</h2>
-                <p th:text="${settings.index.successGallery.subtitle}">Những công trình đã khẳng định vị thế và tâm huyết của S-Housing</p>
-            </div>
-            <div class="container gallery-grid">
-                <div class="gallery-item" th:each="item : ${settings.index.successGallery.items}">
-                    <img th:src="@{${item.image}}" th:alt="${item.title}" />
-                    <div class="gallery-overlay">
-                        <h3 th:text="${item.title}">Villa Vinhomes Grand Park</h3>
-                        <p th:text="${item.desc}">Phong cách Tân cổ điển lịch lãm...</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
 
 
@@ -143,5 +148,84 @@
     <!-- Footer Fragment -->
     <footer th:replace="~{fragments/footer :: footer}"></footer>
 
+    <!-- Project Lightbox Modal -->
+    <div id="projectLightbox" class="project-lightbox" onclick="if(event.target === this) closeProjectLightbox()">
+        <span class="lightbox-close" onclick="closeProjectLightbox()">&times;</span>
+        
+        <button class="lightbox-nav-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="lightbox-nav-btn next" onclick="changeSlide(1)">&#10095;</button>
+        
+        <div class="lightbox-content">
+            <div class="lightbox-slider-container">
+                <div id="lightboxSlider" class="lightbox-slider">
+                    <!-- Images will be injected here -->
+                </div>
+            </div>
+            
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle" style="color: var(--primary-color); margin: 0; font-size: 24px;">Project Title</h3>
+                <div class="lightbox-counter" style="color: white; font-weight: 600;">
+                    <span id="lbCurrentIndex">1</span> / <span id="lbTotalCount">5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script th:inline="javascript">
+        let currentImages = [];
+        let currentIndex = 0;
+
+        function openProjectLightbox(element) {
+            const imagesStr = element.getAttribute('data-images');
+            const title = element.getAttribute('data-title');
+            
+            currentImages = imagesStr.split(',');
+            currentIndex = 0;
+            
+            document.getElementById('lightboxTitle').innerText = title;
+            document.getElementById('lbTotalCount').innerText = currentImages.length;
+            
+            // Pre-inject images
+            const slider = document.getElementById('lightboxSlider');
+            slider.innerHTML = '';
+            currentImages.forEach((imgSrc, index) => {
+                const img = document.createElement('img');
+                img.src = imgSrc;
+                img.alt = `Slide ${index + 1}`;
+                slider.appendChild(img);
+            });
+
+            updateLightbox();
+            
+            document.getElementById('projectLightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectLightbox() {
+            document.getElementById('projectLightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function updateLightbox() {
+            const slider = document.getElementById('lightboxSlider');
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            document.getElementById('lbCurrentIndex').innerText = currentIndex + 1;
+        }
+
+        function changeSlide(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = currentImages.length - 1;
+            if (currentIndex >= currentImages.length) currentIndex = 0;
+            updateLightbox();
+        }
+
+        // Key listeners
+        document.addEventListener('keydown', function(event) {
+            if (!document.getElementById('projectLightbox').classList.contains('active')) return;
+            if (event.key === "Escape") closeProjectLightbox();
+            if (event.key === "ArrowLeft") changeSlide(-1);
+            if (event.key === "ArrowRight") changeSlide(1);
+        });
+    </script>
 </body>
 </html>

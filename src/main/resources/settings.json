@@ -101,15 +101,74 @@
       "title": "Dự Án <span style='color: var(--primary-color);'>Tiêu Biểu</span>",
       "subtitle": "Những công trình đã khẳng định vị thế và tâm huyết của S-Housing",
       "items": [
-        {"image": "/images/project_villa_1.png", "title": "Villa Vinhomes Grand Park", "desc": "Phong cách Tân cổ điển lịch lãm, tinh tế trong từng chi tiết."},
-        {"image": "/images/project_apartment_2.png", "title": "Penthouse Mastery Thảo Điền", "desc": "Không gian mở hiện đại, tầm nhìn 360 độ ôm trọn thành phố."},
-        {"image": "/images/project_townhouse_2.png", "title": "Văn Phòng Landmark 81", "desc": "Thiết kế biophilic, tối ưu năng suất và năng lượng sáng tạo."},
-        {"image": "/images/project_villa_3.png", "title": "Modern Riverside Villa", "desc": "Kiến trúc tối giản kết hợp vật liệu tự nhiên, tạo nên một ốc đảo bình yên ngay lòng thành phố."},
-        {"image": "/images/project_penthouse_3.png", "title": "The Horizon Suite", "desc": "Siêu căn hộ hạng sang với nội thất may đo, tích hợp công nghệ Smart Home đỉnh cao."},
-        {"image": "/images/project_townhouse_3.png", "title": "Urban Green Townhouse", "desc": "Giải pháp lấy sáng và thông gió thông minh cho không gia đô thị chật hẹp, kiến trúc bền vững."}
+        {
+          "images": [
+            "/images/project_villa_1.png",
+            "/images/project_villa_2.png",
+            "/images/project_villa_3.png",
+            "/images/project_villa.png",
+            "/images/project_villa_lake.png"
+          ],
+          "title": "Villa Vinhomes Grand Park",
+          "desc": "Phong cách Tân cổ điển lịch lãm, tinh tế trong từng chi tiết."
+        },
+        {
+          "images": [
+            "/images/project_apartment_2.png",
+            "/images/project_apartment_1.png",
+            "/images/project_apartment.png",
+            "/images/project_penthouse_3.png",
+            "/images/furniture_living_room.png"
+          ],
+          "title": "Penthouse Mastery Thảo Điền",
+          "desc": "Không gian mở hiện đại, tầm nhìn 360 độ ôm trọn thành phố."
+        },
+        {
+          "images": [
+            "/images/project_townhouse_2.png",
+            "/images/project_townhouse_1.png",
+            "/images/project_townhouse.png",
+            "/images/project_townhouse_3.png",
+            "/images/project_office_hub.png"
+          ],
+          "title": "Văn Phòng Landmark 81",
+          "desc": "Thiết kế biophilic, tối ưu năng suất and năng lượng sáng tạo."
+        },
+        {
+          "images": [
+            "/images/project_villa_3.png",
+            "/images/project_villa_lake.png",
+            "/images/project_villa_2.png",
+            "/images/project_villa_1.png",
+            "/images/project_villa.png"
+          ],
+          "title": "Modern Riverside Villa",
+          "desc": "Kiến trúc tối giản kết hợp vật liệu tự nhiên, tạo nên một ốc đảo bình yên ngay lòng thành phố."
+        },
+        {
+          "images": [
+            "/images/project_penthouse_3.png",
+            "/images/project_apartment_2.png",
+            "/images/project_apartment_1.png",
+            "/images/project_apartment.png",
+            "/images/furniture_bedroom.png"
+          ],
+          "title": "The Horizon Suite",
+          "desc": "Siêu căn hộ hạng sang với nội thất may đo, tích hợp công nghệ Smart Home đỉnh cao."
+        },
+        {
+          "images": [
+            "/images/project_townhouse_3.png",
+            "/images/project_townhouse_2.png",
+            "/images/project_townhouse_1.png",
+            "/images/project_townhouse.png",
+            "/images/project_eco_house.png"
+          ],
+          "title": "Urban Green Townhouse",
+          "desc": "Giải pháp lấy sáng và thông gió thông minh cho không gia đô thị chật hẹp, kiến trúc bền vững."
+        }
       ]
     },
-
     "cta": {
       "title": "Sẵn Sàng Kiến Tạo Không Gian Của Bạn?",
       "subtitle": "Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S-Housing.",
@@ -151,7 +210,7 @@
     ],
     "vrSection": {
       "title": "Trải Nghiệm VR 4D",
-      "desc": "Tại S-Housing, bạn không chỉ 'nhìn' thấy ngôi nhà qua bản vẽ 2D hay 3D thông thường. Với công nghệ VR 4D, bạn sẽ được 'bước vào' không gian sống tương lai, cảm nhận tỷ lệ vật dụng và ánh sáng một cách thực tế nhất trước khi đặt bút ký hợp đồng thi công.",
+      "desc": "Tại S-Housing, bạn không chỉ nhìn thấy ngôi nhà qua bản vẽ 2D hay 3D thông thường. Với công nghệ VR 4D, bạn sẽ được bước vào không gian sống tương lai, cảm nhận tỷ lệ vật dụng và ánh sáng một cách thực tế nhất trước khi đặt bút ký hợp đồng thi công.",
       "image": "/images/design_vr.png",
       "points": [
         "Tránh sai sót về không gian",
@@ -209,24 +268,24 @@
         "title": "Dự Án Nội Thất & Đồ Gỗ Cao Cấp",
         "subtitle": "Khám phá bộ sưu tập các không gian nội thất được thiết kế và sản xuất trực tiếp bởi S-Housing.",
         "items": [
-          { "image": "/images/furniture_living_room.png", "title": "Phòng Khách Luxury", "desc": "Không gian mở với sofa da cao cấp, bàn trà minimalist và tủ TV gỗ óc chó nguyên khối." },
+          { "image": "/images/furniture_living_room.png", "title": "Phòng Khách Luxury", "desc": "Không gian mở với sofa da cao cấp, bàn trà minimalist and tủ TV gỗ óc chó nguyên khối." },
           { "image": "/images/furniture_kitchen.png", "title": "Không Gian Bếp Walnut", "desc": "Hệ tủ bếp gỗ óc chó thượng hạng kết hợp mặt đá marble tự nhiên nguyên khối." },
           { "image": "/images/furniture_bedroom.png", "title": "Phòng Ngủ Master", "desc": "Giường bọc nỉ êm ái kết hợp hệ tủ quần áo thông minh, mang lại giấc ngủ trọn vẹn." },
           { "image": "/images/project_kitchen_luxury.png", "title": "Phòng Bếp Acrylic High-Gloss", "desc": "Bề mặt sáng bóng gương, kháng nước tuyệt đối, tạo vẻ đẹp hiện đại và sang trọng bậc nhất." },
           { "image": "/images/project_dining_luxury.png", "title": "Phòng Ăn Gỗ Sồi Mỹ", "desc": "Bàn ăn 8 ghế từ gỗ sồi mỹ nhập khẩu, thiết kế thanh lịch cho những bữa tiệc gia đình ấm cúng." },
-          { "image": "/images/project_library_luxury.png", "title": "Góc Thư Giãn & Thư Viện", "desc": "Hệ kệ sách cao kịch trần tích hợp đèn LED cảm ứng, giải pháp tối ưu cho không gian đọc sách." }
+          { "image": "/images/project_library_luxury.png", "title": "Góc Thư Giãn & Thư Viện", "desc": "Hệ kệ sách cao kịch trần tích hợp đèn LED cảm ứng, giải pháp tối ưu cho không gia đọc sách." }
         ]
       },
       {
         "title": "Dự Án Thiết Kế & Thi Công Tổng Thể",
-        "subtitle": "Những công trình biệt thự, nhà phố và căn hộ cao cấp mang dấu ấn S-Housing.",
+        "subtitle": "Những công trình biệt thự, nhà phố and căn hộ cao cấp mang dấu ấn S-Housing.",
         "items": [
           { "image": "/images/project_villa_1.png", "title": "Biệt Thự Vinhomes", "desc": "Hoàn thiện toàn bộ nội thất cao cấp gỗ Óc chó (Walnut), tích hợp đèn thông minh." },
           { "image": "/images/project_townhouse_1.png", "title": "Nhà Phố Quận 2", "desc": "Thiết kế không gian mở đón ánh sáng, ứng dụng Phong Thủy toàn diện." },
           { "image": "/images/project_apartment_2.png", "title": "Penthouse Thảo Điền", "desc": "Bố cục nội thất tối giản (Minimalism) kết hợp công nghệ VR 4D hiện đại." },
-          { "image": "/images/project_villa_lake.png", "title": "Villa Lakeview Resort", "desc": "Kiến trúc Tân cổ điển sang trọng với hướng nhìn ra hồ, tích hợp hồ bơi và sân vườn xa xỉ." },
-          { "image": "/images/project_office_hub.png", "title": "Office Creative Hub 4.0", "desc": "Không gian làm việc mở, trẻ trung, thúc đẩy sự sáng tạo và kết nối tối đa giữa các nhân viên." },
-          { "image": "/images/project_eco_house.png", "title": "Eco House Smart Concept", "desc": "Nhà phố thân thiện môi trường, sử dụng năng lượng xanh và vật liệu tái chế bền vững thông minh." }
+          { "image": "/images/project_villa_lake.png", "title": "Villa Lakeview Resort", "desc": "Kiến trúc Tân cổ điển sang trọng với hướng nhìn ra hồ, tích hợp hồ bơi and sân vườn xa xỉ." },
+          { "image": "/images/project_office_hub.png", "title": "Office Creative Hub 4.0", "desc": "Không gian làm việc mở, trẻ trung, thúc đẩy sự sáng tạo and kết nối tối đa giữa các nhân viên." },
+          { "image": "/images/project_eco_house.png", "title": "Eco House Smart Concept", "desc": "Nhà phố thân thiện môi trường, sử dụng năng lượng xanh and vật liệu tái chế bền vững thông minh." }
         ]
       }
     ]
@@ -236,23 +295,23 @@
     "articles": [
       { "category": "XU HƯỚNG", "title": "Xu Hướng Thiết Kế 2026: Không Gian Xanh & Curve Design", "desc": "Năm 2026 đang chứng kiến sự bùng nổ của thiết kế xanh, vật liệu tái chế.", "image": "/images/furniture_living_room.png" },
       { "category": "PHONG THỦY", "title": "Cách Bố Trí Phòng Khách Chuẩn Phong Thủy Đón Tài Lộc", "desc": "Màu sắc tường nhà, hướng bàn ghế sofa ảnh hưởng lớn đến vận khí gia chủ.", "image": "/images/feng_shui_interior.png" },
-      { "category": "CÔNG NGHỆ", "title": "Lợi ích Của Công Nghệ VR 4D Trong Thiết Kế Nội Thất", "desc": "Khám phá cách VR giúp gia chủ tiết kiệm thời gian và đảm bảo hài lòng tuyệt đối.", "image": "/images/design_vr.png" }
+      { "category": "CÔNG NGHỆ", "title": "Lợi ích Của Công Nghệ VR 4D Trong Thiết Kế Nội Thất", "desc": "Khám phá cách VR giúp gia chủ tiết kiệm thời gian and đảm bảo hài lòng tuyệt đối.", "image": "/images/design_vr.png" }
     ]
   },
   "fengShui": {
     "hero": { "title": "Phong Thủy Không Gian", "bgImage": "/images/feng_shui_hero.png" },
     "intro": {
       "title": "Tính Sinh Khí Cho Ngôi Nhà",
-      "desc": "Phong thủy không chỉ là vị trí đặt để, đó là sự cân bằng các luồng khí, lựa chọn màu sắc hợp cung bản mệnh và bố trí hình khối phù hợp. Chúng tôi áp dụng phong thủy hiện đại nhưng vẫn tôn trọng giá trị truyền thống để mang lại sức khỏe và tài lộc cho gia chủ.",
+      "desc": "Phong thủy không chỉ là vị trí đặt để, đó là sự cân bằng các luồng khí, lựa chọn màu sắc hợp cung bản mệnh and bố trí hình khối phù hợp. Chúng tôi áp dụng phong thủy hiện đại nhưng vẫn tôn trọng giá trị truyền thống để mang lại sức khỏe and tài lộc cho gia chủ.",
       "image": "/images/feng_shui_interior.png"
     },
     "consult": {
       "title": "Dịch Vụ Tư Vấn Đặc Biệt",
       "desc": "Khi lựa chọn thi công tại S-Housing, gia chủ sẽ được chuyên gia phong thủy của chúng tôi tư vấn các nguyên tắc vàng để đón cát, tránh hung:",
       "services": [
-        { "icon": "🛌", "title": "Vị Trí Kê Giường", "desc": "Đảm bảo giấc ngủ sâu, tái tạo năng lượng và sức khỏe dồi dào." },
-        { "icon": "🔥", "title": "Hướng Bếp", "desc": "Giữ lửa hạnh phúc, thúc đẩy tài vận và hòa khí trong gia đình." },
-        { "icon": "🛋️", "title": "Bố Trí Phòng Khách", "desc": "Tạo luồng khí thông thoáng, đón nhận cơ hội và may mắn vào nhà.", "highlight": true }
+        { "icon": "🛌", "title": "Vị Trí Kê Giường", "desc": "Đảm bảo giấc ngủ sâu, tái tạo năng lượng and sức khỏe dồi dào." },
+        { "icon": "🔥", "title": "Hướng Bếp", "desc": "Giữ lửa hạnh phúc, thúc đẩy tài vận and hòa khí trong gia đình." },
+        { "icon": "🛋️", "title": "Bố Trí Phòng Khách", "desc": "Tạo luồng khí thông thoáng, đón nhận cơ hội and may mắn vào nhà.", "highlight": true }
       ]
     }
   },
@@ -260,7 +319,7 @@
     "hero": { "title": "Thi Công Nội Thất", "bgImage": "/images/construction_hero.png" },
     "facility": {
       "title": "Cơ Sở Vật Chất Hiện Đại",
-      "desc": "Khác với các đơn vị thiết kế thuê ngoài, S-Housing sở hữu xưởng sản xuất quy mô lớn tại Củ Chi với dàn máy móc CNC hiện đại, giúp kiểm soát 100% chất lượng từ nguyên liệu đến thành phẩm. Điều này giúp chúng tôi đảm bảo tiến độ và cam kết không phát sinh chi phí.",
+      "desc": "Khác với các đơn vị thiết kế thuê ngoài, S-Housing sở hữu xưởng sản xuất quy mô lớn tại Củ Chi với dàn máy móc CNC hiện đại, giúp kiểm soát 100% chất lượng từ nguyên liệu đến thành phẩm. Điều này giúp chúng tôi đảm bảo tiến độ and cam kết không phát sinh chi phí.",
       "image": "/images/about_factory.png",
       "points": ["Gỗ An Cường chính hãng tiêu chuẩn E1", "Phụ kiện Hafele, Blum cao cấp", "Sơn không mùi, an toàn sức khỏe"]
     },
@@ -269,10 +328,10 @@
       "desc": "Tại mỗi công trình, chúng tôi luôn có kỹ sư giám sát 24/7 để đảm bảo bản vẽ thiết kế được hiện thực hóa một cách chính xác nhất. Sự tỉ mỉ trong từng đường chỉ, mối ghép là điều tạo nên thương hiệu S-Housing.",
       "image": "/images/construction_progress.png",
       "steps": [
-        "1. Khảo sát hiện trạng và đo đạc kỹ lưỡng.",
+        "1. Khảo sát hiện trạng and đo đạc kỹ lưỡng.",
         "2. Lên bản vẽ bóc tách kỹ thuật.",
         "3. Sản xuất trực tiếp tại xưởng với kiểm tra QC.",
-        "4. Lắp ráp, thi công và vệ sinh hoàn thiện."
+        "4. Lắp ráp, thi công and vệ sinh hoàn thiện."
       ]
     },
     "whyChoose": {
@@ -280,7 +339,7 @@
       "services": [
         { "icon": "🔍", "title": "Chất Lượng Cam Kết", "desc": "Sử dụng 100% vật liệu đúng theo hợp đồng, bồi thường nếu phát hiện hàng giả." },
         { "icon": "⏱️", "title": "Đúng Tiến Độ", "desc": "Quy trình khép kín giúp chủ động thời gian, bàn giao ngôi nhà đúng hẹn." },
-        { "icon": "🛡️", "title": "Bảo Hành 2 Năm", "desc": "Chế độ bảo hành dài hạn và bảo trì trọn đời giúp gia chủ yên tâm sử dụng.", "highlight": true }
+        { "icon": "🛡️", "title": "Bảo Hành 2 Năm", "desc": "Chế độ bảo hành dài hạn and bảo trì trọn đời giúp gia chủ yên tâm sử dụng.", "highlight": true }
       ]
     }
   }
