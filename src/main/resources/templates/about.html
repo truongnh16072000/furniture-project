@@ -5,27 +5,36 @@
     <header th:replace="~{fragments/header :: header}"></header>
 
     <main>
-        <section class="interior-hero" style="background-image: url('/images/about_hero.png');">
+        <section class="interior-hero" th:style="|background-image: url('@{${settings.about.hero.bgImage}}');|">
             <div class="hero-overlay"></div>
-            <h1>Về Chúng Tôi</h1>
+            <h1 th:utext="${settings.about.hero.title}">Về Chúng Tôi</h1>
         </section>
 
         <section class="page-content container">
-            <div class="content-block">
-                <h2>Lịch Sử Hình Thành</h2>
-                <p>Khởi đầu từ một đội ngũ nhỏ đam mê kiến trúc và không gian sống, S-Housing Clone đã vươn lên thành một trong những đơn vị dẫn đầu về thi công nội thất phong thủy trọn gói tại Việt Nam.</p>
+            <div th:each="section : ${settings.about.sections}" th:class="${section.reverse} ? 'flex-row' : 'flex-row'" th:style="${section.reverse} ? 'flex-direction: row-reverse; margin-top: 80px;' : 'margin-top: 0;'">
+                <div class="about-text" th:style="${section.reverse} ? '' : 'padding-right: 40px;'">
+                    <h2 style="color: var(--primary-color);" th:text="${section.title}">Section Title</h2>
+                    <p th:text="${section.desc}">Section description...</p>
+                </div>
+                <div class="about-image">
+                    <img th:src="@{${section.image}}" th:alt="${section.title}" style="border-radius: 15px; box-shadow: var(--shadow);" />
+                </div>
             </div>
-            <div class="content-block">
-                <h2>Tầm Nhìn & Sứ Mệnh</h2>
-                <p>Chúng tôi cam kết mang lại không gian sống hoàn mỹ, ứng dụng công nghệ hiện đại 4D VR, giúp khách hàng thấy trước được tổ ấm tương lai một cách vô cùng chân thực và trực quan.</p>
+
+            <div class="content-block text-center" style="margin-top: 100px;">
+                <h2 style="font-size: 36px; margin-bottom: 30px;" th:utext="${settings.about.factory.title}">Xưởng Sản Xuất Trực Tiếp</h2>
+                <p style="max-width: 800px; margin: 0 auto 40px auto; font-size: 18px;" th:text="${settings.about.factory.desc}">Với xưởng sản xuất quy mô...</p>
+                <div class="check-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left;">
+                    <li th:each="point : ${settings.about.factory.points}" style="font-size: 16px;" th:text="${point}">Point</li>
+                </div>
             </div>
         </section>
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">
             <div class="container">
-                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
-                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
-                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+                <h2 th:text="${settings.index.cta.title}">Sẵn Sàng Kiến Tạo Không Gian Của Bạn?</h2>
+                <p th:text="${settings.index.cta.subtitle}">Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí...</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;" th:text="${settings.index.cta.btnLabel}">Liên Hệ Tư Vấn Miễn Phí</a>
             </div>
         </section>
     </main>

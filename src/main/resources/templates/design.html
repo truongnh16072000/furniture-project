@@ -5,37 +5,62 @@
     <header th:replace="~{fragments/header :: header}"></header>
 
     <main>
-        <section class="interior-hero" style="background-image: url('/images/design_hero.png');">
+        <section class="interior-hero" th:style="|background-image: url('@{${settings.design.hero.bgImage}}');|">
             <div class="hero-overlay"></div>
-            <h1>Thiết Kế Nội Thất</h1>
+            <h1 th:utext="${settings.design.hero.title}">Thiết Kế Nội Thất</h1>
         </section>
 
         <section class="page-content container">
-            <div class="content-block">
-                <h2>Cá Nhân Hóa Không Gian Sống</h2>
-                <p>Các kiến trúc sư tại S-Housing không chỉ thiết kế, mà còn lắng nghe nhu cầu của bạn để tạo ra những bản thiết kế độc bản, tối ưu hóa công năng và mang đậm dấu ấn cá nhân.</p>
+            <div class="flex-row">
+                <div class="about-text">
+                    <h2 style="color: var(--primary-color);" th:text="${settings.design.intro.title}">Cá Nhân Hóa Không Gian Sống</h2>
+                    <p th:text="${settings.design.intro.desc}">Các kiến trúc sư tại S-Housing không chỉ thiết kế...</p>
+                </div>
+                <div class="about-image">
+                    <img th:src="@{${settings.design.intro.image}}" alt="Thiết kế nội thất cao cấp" style="border-radius: 15px; box-shadow: var(--shadow);" />
+                </div>
             </div>
-            <div class="services-grid" style="margin-top: 40px;">
-                <div class="service-card">
-                    <h3>Chung Cư</h3>
-                    <p>Tối ưu không gian, mở rộng góc nhìn, đa năng và tiện dụng.</p>
+
+            <div class="content-block text-center" style="margin-top: 100px;">
+                <h2 style="font-size: 42px; margin-bottom: 20px;">Dự Án Theo <span style="color: var(--primary-color);">Hạng Mục</span></h2>
+                <p style="color: var(--text-light); max-width: 700px; margin: 0 auto 80px auto; font-size: 18px;">Mỗi hạng mục công trình đều được S-Housing nghiên cứu kỹ lưỡng để đưa ra giải pháp tối ưu nhất về thẩm mỹ và công năng.</p>
+                
+                <!-- Dynamic Categories -->
+                <div th:each="category, iter : ${settings.design.categories}" th:class="${iter.index % 2 != 0} ? 'category-section alt' : 'category-section'">
+                    <h3 class="category-title" th:text="${category.title}">Category Title</h3>
+                    <div class="services-grid">
+                        <div class="project-card" th:each="project : ${category.projects}">
+                            <div class="project-img-wrapper">
+                                <img th:src="@{${project.image}}" th:alt="${project.title}" class="project-img" />
+                            </div>
+                            <div class="project-content">
+                                <h3 th:text="${project.title}">Project Title</h3>
+                                <p th:text="${project.desc}">Project description...</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Biệt Thự</h3>
-                    <p>Đẳng cấp, sang trọng, thể hiện phong thái hoàng gia hoặc hiện đại.</p>
+            </div>
+
+            <div class="flex-row" style="background: var(--secondary-color); color: white; padding: 60px; border-radius: 30px; align-items: center;">
+                <div class="about-text" style="color: white;">
+                    <h2 style="color: var(--primary-color); font-size: 36px;" th:text="${settings.design.vrSection.title}">Trải Nghiệm VR 4D</h2>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 18px;" th:text="${settings.design.vrSection.desc}">Tại S-Housing, bạn không chỉ 'nhìn' thấy ngôi nhà...</p>
+                    <ul class="check-list" style="margin-top: 20px;">
+                        <li th:each="point : ${settings.design.vrSection.points}" style="color: white;" th:text="${point}">Point</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Nhà Phố</h3>
-                    <p>Khắc phục nhược điểm về diện tích, tạo độ thoáng và đón sáng tự nhiên.</p>
+                <div class="about-image">
+                    <img th:src="@{${settings.design.vrSection.image}}" alt="VR Experience" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.5);" />
                 </div>
             </div>
         </section>
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">
             <div class="container">
-                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
-                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
-                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+                <h2 th:text="${settings.index.cta.title}">Sẵn Sàng Kiến Tạo Không Gian Của Bạn?</h2>
+                <p th:text="${settings.index.cta.subtitle}">Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí...</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;" th:text="${settings.index.cta.btnLabel}">Liên Hệ Tư Vấn Miễn Phí</a>
             </div>
         </section>
     </main>

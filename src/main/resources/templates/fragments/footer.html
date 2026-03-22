@@ -6,9 +6,9 @@
         <div class="footer-widgets">
             <div class="footer-widget about-widget">
                 <div class="footer-logo">
-                    <h2>S<span style="color: var(--primary-color);">.</span>Housing</h2>
+                    <h2 th:text="${settings.site.name}">S<span style="color: var(--primary-color);">.</span>Housing</h2>
                 </div>
-                <p>Website Clone based on the idea of Kiến Trúc – Nội Thất S.Housing. We integrate Feng Shui from the initial stage using 4D VR tech.</p>
+                <p th:text="${settings.index.about.desc}">Website Clone based on the idea of Kiến Trúc – Nội Thất S.Housing. We integrate Feng Shui from the initial stage using 4D VR tech.</p>
                 <div class="social-links">
                     <a href="#" class="social-icon">Fb</a>
                     <a href="#" class="social-icon">Yt</a>
@@ -19,50 +19,48 @@
             <div class="footer-widget links-widget">
                 <h3>Dịch Vụ</h3>
                 <ul>
-                    <li><a th:href="@{/thiet-ke-kien-truc}">Thiết kế kiến trúc</a></li>
-                    <li><a th:href="@{/thiet-ke-noi-that}">Thiết kế nội thất</a></li>
-                    <li><a th:href="@{/thi-cong}">Thi công trọn gói</a></li>
-                    <li><a th:href="@{/phong-thuy}">Tư vấn phong thủy</a></li>
+                    <li th:each="item : ${settings.nav}" th:if="${item.url != '/' and item.url != '/lien-he' and item.url != '/tin-tuc'}">
+                        <a th:href="@{${item.url}}" th:text="${item.label}">Thiết kế kiến trúc</a>
+                    </li>
                 </ul>
             </div>
             
             <div class="footer-widget links-widget">
                 <h3>Dự Án Nổi Bật</h3>
                 <ul>
-                    <li><a th:href="@{/du-an/biet-thu}">Biệt Thự Cao Cấp</a></li>
-                    <li><a th:href="@{/du-an/nha-pho}">Nhà Phố Hiện Đại</a></li>
-                    <li><a th:href="@{/du-an/chung-cu}">Chung Cư Tiện Nghi</a></li>
-                    <li><a th:href="@{/du-an/van-phong}">Văn Phòng Sang Trọng</a></li>
+                    <li th:each="project : ${settings.index.successGallery.items}">
+                        <a th:href="@{/du-an}" th:text="${project.title}">Biệt Thự Cao Cấp</a>
+                    </li>
                 </ul>
             </div>
             
             <div class="footer-widget contact-widget">
                 <h3>Liên Hệ</h3>
-                <p><strong>Hotline:</strong> 090 123 4567</p>
-                <p><strong>Email:</strong> info@shousing-clone.vn</p>
-                <p><strong>Showroom HCM:</strong> 123 Đường Số 1, Phường 2, TP.Thủ Đức</p>
-                <p><strong>Xưởng Sản Xuất:</strong> KCN Tây Bắc Củ Chi, TP. HCM</p>
+                <p><strong>Hotline:</strong> <span th:text="${settings.site.phone}">090 123 4567</span></p>
+                <p><strong>Email:</strong> <span th:text="${settings.site.email}">info@shousing-clone.vn</span></p>
+                <p><strong>Showroom HCM:</strong> <span th:text="${settings.site.address}">123 Đường Số 1...</span></p>
+                <p><strong>Xưởng Sản Xuất:</strong> <span th:text="${settings.site.factory}">KCN Tây Bắc Củ Chi...</span></p>
             </div>
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2026 S-Housing Clone. Privacy Policy | Terms of Service</p>
+            <p>&copy; 2026 <span th:text="${settings.site.name}">S-Housing</span> Clone. Privacy Policy | Terms of Service</p>
         </div>
     </div>
     
     <!-- Global Floating Action Buttons -->
     <div class="floating-actions">
-        <a href="https://m.me/shousing" target="_blank" class="floating-btn btn-messenger">
+        <a th:href="${settings.site.messenger}" target="_blank" class="floating-btn btn-messenger">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.923 1.503 5.495 3.824 7.152L5.45 22l3.43-1.85c.983.275 2.03.424 3.12.424 5.523 0 10-4.145 10-9.259S17.523 2 12 2zm1.093 12.443l-2.793-2.98-5.448 2.98 5.968-6.335 2.87 2.978 5.37-2.978-5.967 6.335z"/></svg>
             <span class="tooltip">Tư vấn Messenger</span>
         </a>
-        <a href="https://zalo.me/0901234567" target="_blank" class="floating-btn btn-zalo">
+        <a th:href="${settings.site.zalo}" target="_blank" class="floating-btn btn-zalo">
             <svg viewBox="0 0 24 24"><path d="M21.054 9.177c-.945-3.033-3.957-5.32-7.48-5.32-4.577 0-8.288 3.39-8.288 7.568 0 2.21 1.051 4.195 2.724 5.568-1.07.973-1.298 2.012-1.118 2.502.261.708 1.151.785 2.551-.252 1.34-1.01 1.8-1.157 2.193-1.157.63.14 1.284.223 1.956.223 4.577 0 8.288-3.39 8.288-7.568 0-1.066-.757-2.31-1.826-1.564z"/></svg>
             <span class="tooltip">Chat Zalo</span>
         </a>
-        <a href="tel:0901234567" class="floating-btn btn-phone">
+        <a th:href="'tel:' + ${settings.site.phone}" class="floating-btn btn-phone">
             <svg viewBox="0 0 24 24"><path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/><path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"/></svg>
-            <span class="tooltip">Gọi Hotline: 090 123 4567</span>
+            <span class="tooltip" th:text="'Gọi Hotline: ' + ${settings.site.phone}">Gọi Hotline: 090 123 4567</span>
         </a>
     </div>
 </footer>

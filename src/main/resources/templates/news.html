@@ -5,29 +5,32 @@
     <header th:replace="~{fragments/header :: header}"></header>
 
     <main>
-        <section class="interior-hero" style="background-image: url('/images/news_hero.png');">
+        <section class="interior-hero" th:style="'background-image: url(' + @{${settings.news.hero.bgImage}} + ');'">
             <div class="hero-overlay"></div>
-            <h1>Tin Tức & Kiến Thức</h1>
+            <h1 th:text="${settings.news.hero.title}">Tin Tức & Kiến Thức</h1>
         </section>
 
         <section class="page-content container">
-            <div class="content-block">
-                <h2>Xu Hướng Thiết Kế 2026</h2>
-                <p>Năm 2026 đang chứng kiến sự bùng nổ của thiết kế xanh, vật liệu tái chế kết hợp với các hình khối mềm mại (Curve Design).</p>
-                <a href="#" style="font-weight: bold; color: var(--primary-color);">Đọc thêm -></a>
-            </div>
-            <div class="content-block" style="border-top: 1px solid var(--border-color); padding-top: 20px;">
-                <h2>Cách Bố Trí Phòng Khách Chuẩn Phong Thủy</h2>
-                <p>Màu sắc tường nhà, hướng bàn ghế sofa ảnh hưởng lớn đến vận khí. Hãy cùng chuyên gia S-Housing tìm hiểu các mẹo này.</p>
-                <a href="#" style="font-weight: bold; color: var(--primary-color);">Đọc thêm -></a>
+            <div class="services-grid">
+                <div th:each="article : ${settings.news.articles}" class="project-card">
+                    <div class="project-img-wrapper">
+                        <img th:src="@{${article.image}}" th:alt="${article.title}" class="project-img" />
+                    </div>
+                    <div class="project-content">
+                        <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;" th:text="${article.category}">CATEGORY</span>
+                        <h3 style="margin-top: 10px;" th:text="${article.title}">Article Title</h3>
+                        <p th:text="${article.desc}">Article description...</p>
+                        <a href="#" style="display: inline-block; margin-top: 15px; font-weight: bold; color: var(--primary-color);">Đọc thêm -></a>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">
             <div class="container">
-                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
-                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
-                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+                <h2 th:text="${settings.index.cta.title}">Sẵn Sàng Kiến Tạo Không Gian Của Bạn?</h2>
+                <p th:text="${settings.index.cta.subtitle}">Nhận ngay bản vẽ phác thảo...</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;" th:text="${settings.index.cta.btnLabel}">Liên Hệ Tư Vấn Miễn Phí</a>
             </div>
         </section>
     </main>

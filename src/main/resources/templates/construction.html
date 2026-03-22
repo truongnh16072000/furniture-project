@@ -5,33 +5,55 @@
     <header th:replace="~{fragments/header :: header}"></header>
 
     <main>
-        <section class="interior-hero" style="background-image: url('/images/construction_hero.png');">
+        <section class="interior-hero" th:style="|background-image: url('@{${settings.construction.hero.bgImage}}');|">
             <div class="hero-overlay"></div>
-            <h1>Thi Công Nội Thất</h1>
+            <h1 th:utext="${settings.construction.hero.title}">Thi Công Nội Thất</h1>
         </section>
 
         <section class="page-content container">
-            <div class="content-block">
-                <h2>Cơ Sở Vật Chất Hiện Đại</h2>
-                <p>Khác với các đơn vị thiết kế thuê ngoài, S-Housing sở hữu xưởng sản xuất quy mô lớn tại Củ Chi với dàn máy móc CNC hiện đại, giúp kiểm soát 100% chất lượng từ nguyên liệu đến thành phẩm.</p>
+            <div class="flex-row">
+                <div class="about-text">
+                    <h2 style="color: var(--primary-color);" th:text="${settings.construction.facility.title}">Cơ Sở Vật Chất Hiện Đại</h2>
+                    <p th:text="${settings.construction.facility.desc}">Khác với các đơn vị thiết kế thuê ngoài...</p>
+                    <ul class="check-list" style="margin-top: 20px;">
+                        <li th:each="point : ${settings.construction.facility.points}" th:text="${point}">Point</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img th:src="@{${settings.construction.facility.image}}" alt="S-Housing Factory Production" style="border-radius: 15px; box-shadow: var(--shadow);" />
+                </div>
             </div>
             
-            <div class="content-block">
-                <h2>Quy Trình Chuẩn Mực</h2>
-                <ul class="check-list">
-                    <li>Khảo sát hiện trạng và đo đạc kỹ lưỡng.</li>
-                    <li>Lên bản vẽ bóc tách kỹ thuật.</li>
-                    <li>Sản xuất trực tiếp tại xưởng với các kiểm tra QC khắt khe.</li>
-                    <li>Lắp ráp, thi công thực tế tại công trình và vệ sinh hoàn thiện.</li>
-                </ul>
+            <div class="flex-row" style="margin-top: 80px; flex-direction: row-reverse;">
+                <div class="about-text">
+                    <h2 style="color: var(--primary-color);" th:text="${settings.construction.process.title}">Quy Trình Thi Công Chuẩn Mực</h2>
+                    <p th:text="${settings.construction.process.desc}">Tại mỗi công trình, chúng tôi luôn có kỹ sư giám sát...</p>
+                    <ul class="check-list" style="margin-top: 20px;">
+                        <li th:each="step : ${settings.construction.process.steps}" th:text="${step}">Step</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img th:src="@{${settings.construction.process.image}}" alt="Construction in Progress" style="border-radius: 15px; box-shadow: var(--shadow);" />
+                </div>
+            </div>
+
+            <div class="content-block text-center" style="margin-top: 100px;">
+                <h2 style="font-size: 32px; margin-bottom: 40px;" th:text="${settings.construction.whyChoose.title}">Tại Sao Chọn Thi Công Tại S-Housing?</h2>
+                <div class="services-grid">
+                    <div th:each="service : ${settings.construction.whyChoose.services}" class="service-card" th:classappend="${service['highlight']} ? 'highlight' : ''">
+                        <div class="icon" th:text="${service.icon}">🔍</div>
+                        <h3 th:text="${service.title}">Chất Lượng Cam Kết</h3>
+                        <p th:text="${service.desc}">Sử dụng 100% vật liệu...</p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">
             <div class="container">
-                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
-                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
-                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+                <h2 th:text="${settings.index.cta.title}">Sẵn Sàng Kiến Tạo Không Gian Của Bạn?</h2>
+                <p th:text="${settings.index.cta.subtitle}">Nhận ngay bản vẽ phác thảo...</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;" th:text="${settings.index.cta.btnLabel}">Liên Hệ Tư Vấn Miễn Phí</a>
             </div>
         </section>
     </main>

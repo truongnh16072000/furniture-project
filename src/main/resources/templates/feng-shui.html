@@ -5,28 +5,42 @@
     <header th:replace="~{fragments/header :: header}"></header>
 
     <main>
-        <section class="interior-hero" style="background-image: url('/images/feng_shui_hero.png');">
+        <section class="interior-hero" th:style="|background-image: url('@{${settings.fengShui.hero.bgImage}}');|">
             <div class="hero-overlay"></div>
-            <h1>Phong Thủy Không Gian</h1>
+            <h1 th:utext="${settings.fengShui.hero.title}">Phong Thủy Không Gian</h1>
         </section>
 
         <section class="page-content container">
-            <div class="content-block">
-                <h2>Tính Sinh Khí Cho Ngôi Nhà</h2>
-                <p>Phong thủy không chỉ là vị trí đặt để, đó là sự cân bằng các luồng khí, lựa chọn màu sắc hợp cung bản mệnh và bố trí hình khối phù hợp. Chúng tôi áp dụng phong thủy hiện đại nhưng vẫn tôn trọng giá trị truyền thống.</p>
+            <div class="flex-row">
+                <div class="about-text">
+                    <h2 style="color: var(--primary-color);" th:text="${settings.fengShui.intro.title}">Tính Sinh Khí Cho Ngôi Nhà</h2>
+                    <p th:text="${settings.fengShui.intro.desc}">Phong thủy không chỉ là vị trí đặt để...</p>
+                </div>
+                <div class="about-image">
+                    <img th:src="@{${settings.fengShui.intro.image}}" alt="Feng Shui Interior" style="border-radius: 15px; box-shadow: var(--shadow);" />
+                </div>
             </div>
-            <div class="content-block">
-                <h2>Dịch Vụ Tư Vấn Miễn Phí</h2>
-                <p>Khi lựa chọn thi công tại S-Housing, gia chủ sẽ được chuyên gia phong thủy của chúng tôi tư vấn các nguyên tắc kê giường, hướng bếp, và bố trí không gian sống tốt nhất cho sức khỏe, tài lộc.</p>
-                <a href="/lien-he" class="btn btn-primary" style="margin-top: 20px;">Nhận Tư Vấn Cụ Thể</a>
+
+            <div class="content-block text-center" style="margin-top: 80px;">
+                <h2 style="font-size: 32px; margin-bottom: 40px;" th:text="${settings.fengShui.consult.title}">Dịch Vụ Tư Vấn Đặc Biệt</h2>
+                <p style="max-width: 800px; margin: 0 auto; font-size: 18px;" th:text="${settings.fengShui.consult.desc}">Khi lựa chọn thi công tại S-Housing...</p>
+                
+                <div class="services-grid" style="margin-top: 40px;">
+                    <div th:each="service : ${settings.fengShui.consult.services}" class="service-card" th:classappend="${service['highlight']} ? 'highlight' : ''">
+                        <div class="icon" th:text="${service.icon}">🛌</div>
+                        <h3 th:text="${service.title}">Vị Trí Kê Giường</h3>
+                        <p th:text="${service.desc}">Đảm bảo giấc ngủ sâu...</p>
+                    </div>
+                </div>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="margin-top: 40px; border-radius: 30px;">Nhận Tư Vấn Cụ Thể</a>
             </div>
         </section>
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">
             <div class="container">
-                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
-                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
-                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+                <h2 th:text="${settings.index.cta.title}">Sẵn Sàng Kiến Tạo Không Gian Của Bạn?</h2>
+                <p th:text="${settings.index.cta.subtitle}">Nhận ngay bản vẽ phác thảo...</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;" th:text="${settings.index.cta.btnLabel}">Liên Hệ Tư Vấn Miễn Phí</a>
             </div>
         </section>
     </main>

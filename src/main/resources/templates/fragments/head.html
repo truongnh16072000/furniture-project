@@ -4,27 +4,27 @@
     <!-- Meta tags for SEO & Charset -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-    <meta name="description" th:content="${description} ?: 'S-Housing Clone - Professional Interior Design & Furniture Services'" />
+    <meta name="description" th:content="${description} ?: ${settings.index.hero.subtitle}" />
     <meta name="keywords" th:content="${keywords} ?: 'thiết kế nội thất, thi công nội thất, s-housing, furniture, interior design'" />
     
     <!-- Open Graph (Facebook/Social Media) -->
     <meta property="og:locale" content="vi_VN" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" th:content="${title} ?: 'Professional Interior Design & Furniture Services'" />
-    <meta property="og:description" th:content="${description} ?: 'We provide end-to-end design and construction with 4D VR tech and Feng Shui principles.'" />
+    <meta property="og:title" th:content="${title} ?: ${settings.site.name}" />
+    <meta property="og:description" th:content="${description} ?: ${settings.index.hero.subtitle}" />
     <meta property="og:url" th:content="${url} ?: 'https://s-housing-clone.local'" />
-    <meta property="og:site_name" content="Nội Thất S-Housing Clone" />
-    <meta property="og:image" th:content="${image} ?: @{/images/hero.png}" />
+    <meta property="og:site_name" th:content="${settings.site.name}" />
+    <meta property="og:image" th:content="${image} ?: @{${settings.index.hero.bgImage}}" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" th:content="${title} ?: 'Professional Interior Design & Furniture Services'" />
-    <meta name="twitter:description" th:content="${description} ?: 'We provide end-to-end design and construction with 4D VR tech and Feng Shui principles.'" />
-    <meta name="twitter:image" th:content="${image} ?: @{/images/hero.png}" />
+    <meta name="twitter:title" th:content="${title} ?: ${settings.site.name}" />
+    <meta name="twitter:description" th:content="${description} ?: ${settings.index.hero.subtitle}" />
+    <meta name="twitter:image" th:content="${image} ?: @{${settings.index.hero.bgImage}}" />
     
-    <title th:text="${title} ?: 'S-Housing Clone | Interior Design'">S-Housing Clone</title>
+    <title th:text="${title} ?: ${settings.site.name} + ' | Interior Design'">S-Housing Clone</title>
     
     <!-- CSS and Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,24 +33,23 @@
     <link rel="stylesheet" th:href="@{/css/style.css}" />
     
     <!-- Structured Data Script (JSON-LD for LocalBusiness / Organization) -->
-    <script type="application/ld+json">
+    <script type="application/ld+json" th:inline="javascript">
     {
       "@context": "https://schema.org",
       "@type": "FurnitureStore",
-      "name": "Nội Thất S-Housing Clone",
-      "image": "https://yourdomain.com/images/hero.png",
-      "@id": "",
-      "url": "https://yourdomain.com",
-      "telephone": "+84 90 123 4567",
+      "name": [[${settings.site.name}]],
+      "image": [[${settings.index.hero.bgImage}]],
+      "url": "https://shousing-clone.vn",
+      "telephone": [[${settings.site.phone}]],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Main Street",
+        "streetAddress": [[${settings.site.address}]],
         "addressLocality": "Ho Chi Minh City",
-        "postalCode": "700000",
         "addressCountry": "VN"
       },
       "priceRange": "$$$"
     }
     </script>
+
 </head>
 </html>

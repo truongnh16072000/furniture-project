@@ -1,0 +1,287 @@
+{
+  "site": {
+    "name": "S.Housing",
+    "dotColor": "var(--primary-color)",
+    "phone": "0901234567",
+    "email": "info@shousing-clone.vn",
+    "address": "123 Đường Số 1, Phường 2, TP.Thủ Đức",
+    "factory": "KCN Tây Bắc Củ Chi, TP. HCM",
+    "messenger": "https://m.me/shousing",
+    "zalo": "https://zalo.me/0901234567"
+  },
+  "nav": [
+    {"label": "Trang Chủ", "url": "/"},
+    {"label": "Về Chúng Tôi", "url": "/ve-chung-toi"},
+    {"label": "Thiết Kế Nội Thất", "url": "/thiet-ke-noi-that"},
+    {"label": "Thi Công Nội Thất", "url": "/thi-cong-noi-that"},
+    {"label": "Phong Thủy", "url": "/phong-thuy"},
+    {"label": "Dự Án", "url": "/du-an"},
+    {"label": "Tin Tức", "url": "/tin-tuc"},
+    {"label": "Liên Hệ", "url": "/lien-he"}
+  ],
+  "index": {
+    "hero": {
+      "title": "Kiến Tạo Không Gian Sống <br/><span style='color: var(--primary-color);'>Hoàn Hảo</span> & Tiện Nghi",
+      "subtitle": "Giải pháp thiết kế và thi công nội thất trọn gói. Tích hợp công nghệ VR 4D và nguyên lý phong thủy cho ngôi nhà mơ ước của bạn.",
+      "primaryBtn": "Xem Dự Án Yêu Thích",
+      "secondaryBtn": "Nhận Báo Giá Ngay",
+      "bgImage": "/images/hero.png"
+    },
+    "stats": [
+      {"value": "10+", "label": "Năm Kinh Nghiệm"},
+      {"value": "1000+", "label": "Dự Án Hoàn Thành"},
+      {"value": "500+", "label": "Khách Hàng Tin Tưởng"},
+      {"value": "100%", "label": "Sự Hài Lòng"}
+    ],
+    "services": {
+      "title": "Dịch Vụ Nổi Bật Tại S-Housing",
+      "subtitle": "Khẳng định chất lượng qua từng không gian sống",
+      "items": [
+        {"icon": "📐", "title": "Thiết Kế Nội Thất", "desc": "Sáng tạo không gian mang đậm dấu ấn cá nhân, tối ưu hóa công năng và thẩm mỹ."},
+        {"icon": "🔮", "title": "Thiết Kế Phong Thủy", "desc": "Ứng dụng chuyên sâu yếu tố phong thủy giúp gia chủ đón nhận tài lộc và bình an.", "highlight": true},
+        {"icon": "👓", "title": "Công Nghệ VR 4D", "desc": "Trải nghiệm thực tế ảo không gian nhà bạn trước khi tiến hành thi công thực tế."},
+        {"icon": "🔨", "title": "Thi Công Trọn Gói", "desc": "Xưởng sản xuất riêng biệt, kiểm soát chặt chẽ quá trình sản xuất và thi công hoàn thiện."},
+        {"icon": "🏛️", "title": "Tư Vấn Kiến Trúc", "desc": "Quy hoạch không gian tổng thể, tối ưu diện tích và công năng sử dụng vượt trội."},
+        {"icon": "🌳", "title": "Thiết Kế Cảnh Quan", "desc": "Kiến tạo không gian xanh, sân vườn mang lại sự thư thái và mát mẻ cho gia đình."},
+        {"icon": "🛋️", "title": "Sản Xuất Đồ Gỗ", "desc": "Sản xuất nội thất may đo theo kích thước riêng, phù hợp tuyệt đối với căn hộ."},
+        {"icon": "🛠️", "title": "Cải Tạo Không Gian", "desc": "Nâng cấp không gian sống cũ thành diện mạo mới hiện đại và sang trọng bậc nhất."}
+      ]
+    },
+    "about": {
+      "title": "Vì Sao Khách Hàng Chọn <br/><span style='color: var(--primary-color);'>S.Housing?</span>",
+      "desc": "Chúng tôi không chỉ cung cấp dịch vụ thiết kế đơn thuần, mà tạo ra giá trị sống đích thực. Bằng việc kết hợp đội ngũ KTS giàu kinh nghiệm, tư vấn phong thủy bài bản và ứng dụng công nghệ hiện đại mang tính đột phá.",
+      "image": "/images/about_architecture.png",
+      "expValue": "10+",
+      "expLabel": "Năm Kinh Nghiệm",
+      "checkList": [
+        "100% Mẫu thiết kế cá nhân hóa",
+        "Bảo hành dài hạn, bảo trì trọn đời",
+        "Trực tiếp sản xuất tại xưởng",
+        "Minh bạch chi phí, không phát sinh"
+      ],
+      "btnLabel": "Tìm Hiểu Thêm Về Chúng Tôi"
+    },
+    "materials": {
+      "title": "Vật Liệu <span style='color: var(--primary-color);'>Thượng Hạng</span>",
+      "subtitle": "S-Housing tuyển chọn những nguồn nguyên liệu cao cấp nhất, đảm bảo tính thẩm mỹ vượt trội và độ bền vĩnh cửu cho mọi công trình.",
+      "items": [
+        {
+          "image": "/images/material_wood.png",
+          "title": "Gỗ Óc Chó (Walnut) Nhập Khẩu",
+          "desc": "Dòng gỗ 'vua' trong thiết kế nội thất với vân gỗ cuộn sóng độc nhất, màu sắc ấm áp mang lại vẻ đẹp quyền quý và sang trọng tuyệt đối cho không gian sống của bạn."
+        },
+        {
+          "image": "/images/material_marble.png",
+          "title": "Đá Marble Tự Nhiên",
+          "desc": "Các dòng đá Marble Calacatta và Carrara với đường vân tinh xảo, độ bóng gương hoàn hảo, tạo điểm nhấn nghệ thuật và sự mát lạnh, khoáng đạt cho mặt bếp và sảnh đón."
+        },
+        {
+          "image": "/images/material_oak.png",
+          "title": "Gỗ Sồi (Oak) Mỹ Cao Cấp",
+          "desc": "Bề mặt gỗ sáng màu, vân gỗ tự nhiên thanh lịch, tạo cảm giác rộng rãi, trẻ trung và tràn đầy năng lượng cho phong cách hiện đại và tối giản."
+        },
+        {
+          "image": "/images/material_leather.png",
+          "title": "Da Nappa Thượng Hạng",
+          "desc": "Chất liệu da Nappa nhập khẩu từ Ý, mềm mại và bền bỉ theo thời gian. Màu sắc trầm ấm, khẳng định đẳng cấp nghệ nhân và sự xa hoa cho bộ sofa của bạn."
+        }
+      ]
+    },
+    "process": {
+      "title": "Quy Trình <span style='color: var(--primary-color);'>Chuẩn Mực</span>",
+      "subtitle": "Từ ý tưởng đến hiện thực hóa không gian sống mơ ước",
+      "steps": [
+        {"num": "01", "title": "Tư Vấn & Khảo Sát", "desc": "Lắng nghe nhu cầu và đo đạc hiện trạng thực tế."},
+        {"num": "02", "title": "Thiết Kế 3D/VR 4D", "desc": "Trải nghiệm không gian ảo với độ chính xác tuyệt đối."},
+        {"num": "03", "title": "Sản Xuất Tại Xưởng", "desc": "Gia công tỉ mỉ bằng công nghệ máy móc hiện đại."},
+        {"num": "04", "title": "Lắp Đặt & Bàn Giao", "desc": "Hoàn thiện chỉn chu và bảo hành trọn đời."}
+      ]
+    },
+    "successGallery": {
+      "title": "Dự Án <span style='color: var(--primary-color);'>Tiêu Biểu</span>",
+      "subtitle": "Những công trình đã khẳng định vị thế và tâm huyết của S-Housing",
+      "items": [
+        {"image": "/images/project_villa_1.png", "title": "Villa Vinhomes Grand Park", "desc": "Phong cách Tân cổ điển lịch lãm, tinh tế trong từng chi tiết."},
+        {"image": "/images/project_apartment_2.png", "title": "Penthouse Mastery Thảo Điền", "desc": "Không gian mở hiện đại, tầm nhìn 360 độ ôm trọn thành phố."},
+        {"image": "/images/project_townhouse_2.png", "title": "Văn Phòng Landmark 81", "desc": "Thiết kế biophilic, tối ưu năng suất và năng lượng sáng tạo."},
+        {"image": "/images/project_villa_3.png", "title": "Modern Riverside Villa", "desc": "Kiến trúc tối giản kết hợp vật liệu tự nhiên, tạo nên một ốc đảo bình yên ngay lòng thành phố."},
+        {"image": "/images/project_penthouse_3.png", "title": "The Horizon Suite", "desc": "Siêu căn hộ hạng sang với nội thất may đo, tích hợp công nghệ Smart Home đỉnh cao."},
+        {"image": "/images/project_townhouse_3.png", "title": "Urban Green Townhouse", "desc": "Giải pháp lấy sáng và thông gió thông minh cho không gia đô thị chật hẹp, kiến trúc bền vững."}
+      ]
+    },
+
+    "cta": {
+      "title": "Sẵn Sàng Kiến Tạo Không Gian Của Bạn?",
+      "subtitle": "Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S-Housing.",
+      "btnLabel": "Liên Hệ Tư Vấn Miễn Phí"
+    }
+  },
+  "design": {
+    "hero": {
+      "title": "Thiết Kế Nội Thất",
+      "bgImage": "/images/design_hero.png"
+    },
+    "intro": {
+      "title": "Cá Nhân Hóa Không Gian Sống",
+      "desc": "Các kiến trúc sư tại S-Housing không chỉ thiết kế, mà còn lắng nghe nhu cầu của bạn để tạo ra những bản thiết kế độc bản, tối ưu hóa công năng và mang đậm dấu ấn cá nhân. Chúng tôi tin rằng cái đẹp phải đi đôi với sự tiện dụng.",
+      "image": "/images/furniture_living_room.png"
+    },
+    "categories": [
+      {
+        "title": "Thiết Kế Nội Thất Chung Cư",
+        "projects": [
+          {"image": "/images/project_apartment_1.png", "title": "Scandi Comfort", "desc": "Phong cách Scandinavian hiện đại, tối ưu ánh sáng và cảm giác ấm cúng cho gia đình trẻ."},
+          {"image": "/images/project_apartment_2.png", "title": "Urban Luxe Studio", "desc": "Studio cao cấp tối giản, tích hợp nội thất thông minh cho lối sống năng động và hiện đại."}
+        ]
+      },
+      {
+        "title": "Thiết Kế Nội Thất Biệt Thự",
+        "projects": [
+          {"image": "/images/project_villa_1.png", "title": "Neoclassical Grandeur", "desc": "Không gian biệt thự Tân cổ điển sang trọng, khẳng định đẳng cấp thượng lưu và sự vĩnh cửu."},
+          {"image": "/images/project_villa_2.png", "title": "Modern Tropical Retreat", "desc": "Biệt thự nhiệt đới hiện đại, kết nối thiên nhiên và không gian sống mở khoáng đạt."}
+        ]
+      },
+      {
+        "title": "Thiết Kế Nội Thất Nhà Phố",
+        "projects": [
+          {"image": "/images/project_townhouse_1.png", "title": "Elegant Family Home", "desc": "Nhà phố thanh lịch, giải pháp lấy sáng tự nhiên và bố cục linh hoạt cho không gian hẹp."},
+          {"image": "/images/project_townhouse_2.png", "title": "Industrial Edge", "desc": "Nhà phố phong cách Công nghiệp đương đại, cá tính và đầy đột phá trong từng chi tiết."}
+        ]
+      }
+    ],
+    "vrSection": {
+      "title": "Trải Nghiệm VR 4D",
+      "desc": "Tại S-Housing, bạn không chỉ 'nhìn' thấy ngôi nhà qua bản vẽ 2D hay 3D thông thường. Với công nghệ VR 4D, bạn sẽ được 'bước vào' không gian sống tương lai, cảm nhận tỷ lệ vật dụng và ánh sáng một cách thực tế nhất trước khi đặt bút ký hợp đồng thi công.",
+      "image": "/images/design_vr.png",
+      "points": [
+        "Tránh sai sót về không gian",
+        "Dễ dàng điều chỉnh màu sắc vật liệu",
+        "Tiết kiệm thời gian và chi phí chỉnh sửa"
+      ]
+    }
+  },
+  "about": {
+    "hero": { "title": "Về Chúng Tôi", "bgImage": "/images/about_hero.png" },
+    "sections": [
+      {
+        "title": "Lịch Sử Hình Thành",
+        "desc": "Khởi đầu từ một đội ngũ nhỏ đam mê kiến trúc và không gian sống, S-Housing Clone đã vươn lên thành một trong những đơn vị dẫn đầu về thi công nội thất phong thủy trọn gói tại Việt Nam. Chúng tôi tin rằng mỗi ngôi nhà đều kể một câu chuyện riêng, và chúng tôi ở đây để giúp bạn viết nên câu chuyện đó.",
+        "image": "/images/about_studio.png",
+        "reverse": false
+      },
+      {
+        "title": "Tầm Nhìn & Sứ Mệnh",
+        "desc": "Chúng tôi cam kết mang lại không gian sống hoàn mỹ, ứng dụng công nghệ hiện đại 4D VR, giúp khách hàng thấy trước được tổ ấm tương lai một cách vô cùng chân thực và trực quan. Sứ mệnh của chúng tôi là nâng tầm chất lượng sống của người Việt thông qua những thiết kế tinh tế và quy trình thi công tận tâm.",
+        "image": "/images/about_factory.png",
+        "reverse": true
+      }
+    ],
+    "factory": {
+      "title": "Xưởng Sản Xuất Trực Tiếp",
+      "desc": "Với xưởng sản xuất quy mô hơn 1000m2 tại Củ Chi, được trang bị máy móc CNC hiện đại theo tiêu chuẩn Châu Âu, chúng tôi tự tin kiểm soát 100% chất lượng sản phẩm và tối ưu chi phí cho khách hàng.",
+      "points": [
+        "Máy móc CNC độ chính xác tuyệt đối",
+        "Nguyên liệu gỗ An Cường chính hãng",
+        "Đội ngũ thợ lành nghề trên 10 năm kinh nghiệm",
+        "Quy trình QC kiểm soát chéo nghiêm ngặt"
+      ]
+    }
+  },
+  "contact": {
+    "hero": { "title": "Liên Hệ Ngay", "bgImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80" },
+    "subtitle": "Để lại thông tin hoặc liên hệ trực tiếp, chúng tôi sẽ phác thảo không gian sống mơ ước của bạn ngay hôm nay.",
+    "cards": [
+      { "title": "Hotline Tư Vấn 24/7", "value": "090 123 4567", "link": "tel:0901234567", "linkLabel": "Gọi ngay", "icon": "phone" },
+      { "title": "Chat Zalo Trực Tiếp", "value": "Nhận báo giá & bản vẽ mẫu", "link": "https://zalo.me/0901234567", "linkLabel": "Nhắn tin qua Zalo", "icon": "zalo", "color": "#0068FF" },
+      { "title": "Email Chăm Sóc KH", "value": "info@shousing-clone.vn", "link": "mailto:info@shousing-clone.vn", "linkLabel": "Gửi email", "icon": "email" },
+      { "title": "Trụ Sở Chính & Showroom", "value": "123 Đường Số 1, TP Thủ Đức", "link": "#map", "linkLabel": "Chỉ đường", "icon": "map" }
+    ],
+    "form": {
+      "title": "Bạn Cần Thiết Kế & Thi Công?",
+      "subtitle": "Kỹ sư của chúng tôi sẽ gọi lại tư vấn miễn phí ngay sau khi nhận được yêu cầu.",
+      "btnLabel": "Gửi Yêu Cầu Tư Vấn Ngay"
+    }
+  },
+  "projects": {
+    "hero": { "title": "Dự Án Nổi Bật", "bgImage": "/images/projects_hero.png" },
+    "sections": [
+      {
+        "title": "Dự Án Nội Thất & Đồ Gỗ Cao Cấp",
+        "subtitle": "Khám phá bộ sưu tập các không gian nội thất được thiết kế và sản xuất trực tiếp bởi S-Housing.",
+        "items": [
+          { "image": "/images/furniture_living_room.png", "title": "Phòng Khách Luxury", "desc": "Không gian mở với sofa da cao cấp, bàn trà minimalist và tủ TV gỗ óc chó nguyên khối." },
+          { "image": "/images/furniture_kitchen.png", "title": "Không Gian Bếp Walnut", "desc": "Hệ tủ bếp gỗ óc chó thượng hạng kết hợp mặt đá marble tự nhiên nguyên khối." },
+          { "image": "/images/furniture_bedroom.png", "title": "Phòng Ngủ Master", "desc": "Giường bọc nỉ êm ái kết hợp hệ tủ quần áo thông minh, mang lại giấc ngủ trọn vẹn." },
+          { "image": "/images/project_kitchen_luxury.png", "title": "Phòng Bếp Acrylic High-Gloss", "desc": "Bề mặt sáng bóng gương, kháng nước tuyệt đối, tạo vẻ đẹp hiện đại và sang trọng bậc nhất." },
+          { "image": "/images/project_dining_luxury.png", "title": "Phòng Ăn Gỗ Sồi Mỹ", "desc": "Bàn ăn 8 ghế từ gỗ sồi mỹ nhập khẩu, thiết kế thanh lịch cho những bữa tiệc gia đình ấm cúng." },
+          { "image": "/images/project_library_luxury.png", "title": "Góc Thư Giãn & Thư Viện", "desc": "Hệ kệ sách cao kịch trần tích hợp đèn LED cảm ứng, giải pháp tối ưu cho không gian đọc sách." }
+        ]
+      },
+      {
+        "title": "Dự Án Thiết Kế & Thi Công Tổng Thể",
+        "subtitle": "Những công trình biệt thự, nhà phố và căn hộ cao cấp mang dấu ấn S-Housing.",
+        "items": [
+          { "image": "/images/project_villa_1.png", "title": "Biệt Thự Vinhomes", "desc": "Hoàn thiện toàn bộ nội thất cao cấp gỗ Óc chó (Walnut), tích hợp đèn thông minh." },
+          { "image": "/images/project_townhouse_1.png", "title": "Nhà Phố Quận 2", "desc": "Thiết kế không gian mở đón ánh sáng, ứng dụng Phong Thủy toàn diện." },
+          { "image": "/images/project_apartment_2.png", "title": "Penthouse Thảo Điền", "desc": "Bố cục nội thất tối giản (Minimalism) kết hợp công nghệ VR 4D hiện đại." },
+          { "image": "/images/project_villa_lake.png", "title": "Villa Lakeview Resort", "desc": "Kiến trúc Tân cổ điển sang trọng với hướng nhìn ra hồ, tích hợp hồ bơi và sân vườn xa xỉ." },
+          { "image": "/images/project_office_hub.png", "title": "Office Creative Hub 4.0", "desc": "Không gian làm việc mở, trẻ trung, thúc đẩy sự sáng tạo và kết nối tối đa giữa các nhân viên." },
+          { "image": "/images/project_eco_house.png", "title": "Eco House Smart Concept", "desc": "Nhà phố thân thiện môi trường, sử dụng năng lượng xanh và vật liệu tái chế bền vững thông minh." }
+        ]
+      }
+    ]
+  },
+  "news": {
+    "hero": { "title": "Tin Tức & Kiến Thức", "bgImage": "/images/news_hero.png" },
+    "articles": [
+      { "category": "XU HƯỚNG", "title": "Xu Hướng Thiết Kế 2026: Không Gian Xanh & Curve Design", "desc": "Năm 2026 đang chứng kiến sự bùng nổ của thiết kế xanh, vật liệu tái chế.", "image": "/images/furniture_living_room.png" },
+      { "category": "PHONG THỦY", "title": "Cách Bố Trí Phòng Khách Chuẩn Phong Thủy Đón Tài Lộc", "desc": "Màu sắc tường nhà, hướng bàn ghế sofa ảnh hưởng lớn đến vận khí gia chủ.", "image": "/images/feng_shui_interior.png" },
+      { "category": "CÔNG NGHỆ", "title": "Lợi ích Của Công Nghệ VR 4D Trong Thiết Kế Nội Thất", "desc": "Khám phá cách VR giúp gia chủ tiết kiệm thời gian và đảm bảo hài lòng tuyệt đối.", "image": "/images/design_vr.png" }
+    ]
+  },
+  "fengShui": {
+    "hero": { "title": "Phong Thủy Không Gian", "bgImage": "/images/feng_shui_hero.png" },
+    "intro": {
+      "title": "Tính Sinh Khí Cho Ngôi Nhà",
+      "desc": "Phong thủy không chỉ là vị trí đặt để, đó là sự cân bằng các luồng khí, lựa chọn màu sắc hợp cung bản mệnh và bố trí hình khối phù hợp. Chúng tôi áp dụng phong thủy hiện đại nhưng vẫn tôn trọng giá trị truyền thống để mang lại sức khỏe và tài lộc cho gia chủ.",
+      "image": "/images/feng_shui_interior.png"
+    },
+    "consult": {
+      "title": "Dịch Vụ Tư Vấn Đặc Biệt",
+      "desc": "Khi lựa chọn thi công tại S-Housing, gia chủ sẽ được chuyên gia phong thủy của chúng tôi tư vấn các nguyên tắc vàng để đón cát, tránh hung:",
+      "services": [
+        { "icon": "🛌", "title": "Vị Trí Kê Giường", "desc": "Đảm bảo giấc ngủ sâu, tái tạo năng lượng và sức khỏe dồi dào." },
+        { "icon": "🔥", "title": "Hướng Bếp", "desc": "Giữ lửa hạnh phúc, thúc đẩy tài vận và hòa khí trong gia đình." },
+        { "icon": "🛋️", "title": "Bố Trí Phòng Khách", "desc": "Tạo luồng khí thông thoáng, đón nhận cơ hội và may mắn vào nhà.", "highlight": true }
+      ]
+    }
+  },
+  "construction": {
+    "hero": { "title": "Thi Công Nội Thất", "bgImage": "/images/construction_hero.png" },
+    "facility": {
+      "title": "Cơ Sở Vật Chất Hiện Đại",
+      "desc": "Khác với các đơn vị thiết kế thuê ngoài, S-Housing sở hữu xưởng sản xuất quy mô lớn tại Củ Chi với dàn máy móc CNC hiện đại, giúp kiểm soát 100% chất lượng từ nguyên liệu đến thành phẩm. Điều này giúp chúng tôi đảm bảo tiến độ và cam kết không phát sinh chi phí.",
+      "image": "/images/about_factory.png",
+      "points": ["Gỗ An Cường chính hãng tiêu chuẩn E1", "Phụ kiện Hafele, Blum cao cấp", "Sơn không mùi, an toàn sức khỏe"]
+    },
+    "process": {
+      "title": "Quy Trình Thi Công Chuẩn Mực",
+      "desc": "Tại mỗi công trình, chúng tôi luôn có kỹ sư giám sát 24/7 để đảm bảo bản vẽ thiết kế được hiện thực hóa một cách chính xác nhất. Sự tỉ mỉ trong từng đường chỉ, mối ghép là điều tạo nên thương hiệu S-Housing.",
+      "image": "/images/construction_progress.png",
+      "steps": [
+        "1. Khảo sát hiện trạng và đo đạc kỹ lưỡng.",
+        "2. Lên bản vẽ bóc tách kỹ thuật.",
+        "3. Sản xuất trực tiếp tại xưởng với kiểm tra QC.",
+        "4. Lắp ráp, thi công và vệ sinh hoàn thiện."
+      ]
+    },
+    "whyChoose": {
+      "title": "Tại Sao Chọn Thi Công Tại S-Housing?",
+      "services": [
+        { "icon": "🔍", "title": "Chất Lượng Cam Kết", "desc": "Sử dụng 100% vật liệu đúng theo hợp đồng, bồi thường nếu phát hiện hàng giả." },
+        { "icon": "⏱️", "title": "Đúng Tiến Độ", "desc": "Quy trình khép kín giúp chủ động thời gian, bàn giao ngôi nhà đúng hẹn." },
+        { "icon": "🛡️", "title": "Bảo Hành 2 Năm", "desc": "Chế độ bảo hành dài hạn và bảo trì trọn đời giúp gia chủ yên tâm sử dụng.", "highlight": true }
+      ]
+    }
+  }
+}

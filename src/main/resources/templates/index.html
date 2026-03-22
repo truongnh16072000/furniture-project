@@ -11,14 +11,26 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-section" th:style="'background-image: url(' + @{/images/hero.png} + ');'">
+        <section class="hero-section" th:style="'background-image: url(' + @{${settings.index.hero.bgImage}} + ');'">
             <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(26, 32, 44, 0.8), rgba(0, 0, 0, 0.4));"></div>
             <div class="container hero-content">
-                <h1 style="font-weight: 800; letter-spacing: -1px; text-shadow: 0 4px 20px rgba(0,0,0,0.5);">Kiến Tạo Không Gian Sống <br/><span style="color: var(--primary-color);">Hoàn Hảo</span> & Tiện Nghi</h1>
-                <p style="font-size: 20px; font-weight: 300; max-width: 700px; margin: 0 auto 40px auto; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">Giải pháp thiết kế và thi công nội thất trọn gói. Tích hợp công nghệ VR 4D và nguyên lý phong thủy cho ngôi nhà mơ ước của bạn.</p>
+                <h1 style="font-weight: 800; letter-spacing: -1px; text-shadow: 0 4px 20px rgba(0,0,0,0.5);" th:utext="${settings.index.hero.title}">Kiến Tạo Không Gian Sống <br/><span style="color: var(--primary-color);">Hoàn Hảo</span> & Tiện Nghi</h1>
+                <p style="font-size: 20px; font-weight: 300; max-width: 700px; margin: 0 auto 40px auto; text-shadow: 0 2px 10px rgba(0,0,0,0.5);" th:text="${settings.index.hero.subtitle}">Giải pháp thiết kế và thi công nội thất trọn gói...</p>
                 <div class="hero-buttons">
-                    <a th:href="@{/du-an}" class="btn btn-primary btn-large btn-glow">Xem Dự Án Yêu Thích</a>
-                    <a th:href="@{/lien-he}" class="btn btn-secondary btn-large">Nhận Báo Giá Ngay</a>
+                    <a th:href="@{/du-an}" class="btn btn-primary btn-large btn-glow" th:text="${settings.index.hero.primaryBtn}">Xem Dự Án Yêu Thích</a>
+                    <a th:href="@{/lien-he}" class="btn btn-secondary btn-large" th:text="${settings.index.hero.secondaryBtn}">Nhận Báo Giá Ngay</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" th:each="stat : ${settings.index.stats}">
+                        <h3 th:text="${stat.value}">10+</h3>
+                        <p th:text="${stat.label}">Năm Kinh Nghiệm</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -26,112 +38,103 @@
         <!-- Services Features -->
         <section class="services-section">
             <div class="container text-center section-header">
-                <h2>Dịch Vụ Nổi Bật Tại S-Housing</h2>
-                <p>Khẳng định chất lượng qua từng không gian sống</p>
+                <h2 th:text="${settings.index.services.title}">Dịch Vụ Nổi Bật Tại S-Housing</h2>
+                <p th:text="${settings.index.services.subtitle}">Khẳng định chất lượng qua từng không gian sống</p>
             </div>
             
             <div class="container services-grid">
-                <div class="service-card">
-                    <div class="icon">📐</div>
-                    <h3>Thiết Kế Nội Thất</h3>
-                    <p>Sáng tạo không gian mang đậm dấu ấn cá nhân, tối ưu hóa công năng và thẩm mỹ.</p>
-                </div>
-                
-                <div class="service-card highlight">
-                    <div class="icon">🔮</div>
-                    <h3>Thiết Kế Phong Thủy</h3>
-                    <p>Ứng dụng chuyên sâu yếu tố phong thủy giúp gia chủ đón nhận tài lộc và bình an.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="icon">👓</div>
-                    <h3>Công Nghệ VR 4D</h3>
-                    <p>Trải nghiệm thực tế ảo không gian nhà bạn trước khi tiến hành thi công thực tế.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="icon">🔨</div>
-                    <h3>Thi Công Trọn Gói</h3>
-                    <p>Xưởng sản xuất riêng biệt, kiểm soát chặt chẽ quá trình sản xuất và thi công hoàn thiện.</p>
+                <div th:each="service : ${settings.index.services.items}" th:class="${service['highlight']} ? 'service-card highlight' : 'service-card'">
+                    <div class="icon" th:text="${service.icon}">📐</div>
+                    <h3 th:text="${service.title}">Thiết Kế Nội Thất</h3>
+                    <p th:text="${service.desc}">Sáng tạo không gian mang đậm dấu ấn cá nhân...</p>
                 </div>
             </div>
         </section>
 
         <!-- About Intro Section -->
-        <section class="about-section" style="background-color: var(--bg-white);">
+        <section class="about-section" style="background-color: var(--bg-white); padding-bottom: 0;">
             <div class="container flex-row" style="align-items: center;">
                 <div class="about-image" style="position: relative;">
-                    <img th:src="@{/images/about_architecture.png}" alt="Thi công nội thất S-Housing" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
+                    <img th:src="@{${settings.index.about.image}}" alt="Thi công nội thất S-Housing" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
                     <div style="position: absolute; bottom: -30px; right: -30px; background: var(--primary-color); color: white; padding: 30px; border-radius: 50%; width: 140px; height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(201, 147, 57, 0.4);">
-                        <strong style="font-size: 32px; line-height: 1;">10+</strong>
-                        <span style="font-size: 14px; text-align: center;">Năm Kinh Nghiệm</span>
+                        <strong style="font-size: 32px; line-height: 1;" th:text="${settings.index.about.expValue}">10+</strong>
+                        <span style="font-size: 14px; text-align: center;" th:text="${settings.index.about.expLabel}">Năm Kinh Nghiệm</span>
                     </div>
                 </div>
                 <div class="about-text" style="padding-left: 40px;">
-                    <h2 style="font-size: 46px; margin-bottom: 25px; color: var(--secondary-color);">Vì Sao Khách Hàng Chọn <br/><span style="color: var(--primary-color);">S.Housing?</span></h2>
-                    <p style="font-size: 18px; line-height: 1.8; color: var(--text-color); margin-bottom: 35px;">Chúng tôi không chỉ cung cấp dịch vụ thiết kế đơn thuần, mà tạo ra giá trị sống đích thực. Bằng việc kết hợp đội ngũ KTS giàu kinh nghiệm, tư vấn phong thủy bài bản và ứng dụng công nghệ hiện đại mang tính đột phá.</p>
+                    <h2 style="font-size: 46px; margin-bottom: 25px; color: var(--secondary-color);" th:utext="${settings.index.about.title}">Vì Sao Khách Hàng Chọn ...</h2>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--text-color); margin-bottom: 35px;" th:text="${settings.index.about.desc}">Chúng tôi không chỉ cung cấp dịch vụ thiết kế đơn thuần...</p>
                     
                     <ul class="check-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 40px;">
-                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">100%</strong> Mẫu thiết kế cá nhân hóa</li>
-                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">Bảo hành</strong> dài hạn, bảo trì trọn đời</li>
-                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">Trực tiếp</strong> sản xuất tại xưởng</li>
-                        <li style="font-size: 16px; display: flex; align-items: center;"><strong style="color: var(--primary-color); margin-right: 5px;">Minh bạch</strong> chi phí, không phát sinh</li>
+                        <li th:each="point : ${settings.index.about.checkList}" style="font-size: 16px; display: flex; align-items: center;" th:text="${point}">Point</li>
                     </ul>
-                    <a th:href="@{/ve-chung-toi}" class="btn btn-primary btn-large btn-glow" style="border-radius: 30px;">Tìm Hiểu Thêm Về Chúng Tôi</a>
+                    <a th:href="@{/ve-chung-toi}" class="btn btn-primary btn-large btn-glow" style="border-radius: 30px;" th:text="${settings.index.about.btnLabel}">Tìm Hiểu Thêm Về Chúng Tôi</a>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Furniture Projects -->
-        <section class="furniture-projects-section" style="background-color: #fcfcfc;">
-            <div class="container text-center section-header">
-                <h2>Dự Án Nội Thất <span style="color: var(--primary-color);">Điển Hình</span></h2>
-                <p>Khám phá không gian sống đẳng cấp được kiến tạo bởi đội ngũ thiết kế chuyên nghiệp</p>
-            </div>
-            
-            <div class="container services-grid" style="margin-top: 40px; margin-bottom: 40px;">
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img th:src="@{/images/furniture_living_room.png}" alt="Nội thất phòng khách hiện đại" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h3>Phòng Khách Luxury</h3>
-                        <p>Không gian mở với sofa da cao cấp, bàn trà minimalist và tủ TV gỗ óc chó nguyên khối sang trọng.</p>
+        <!-- Material Excellence Section -->
+        <section class="materials-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 style="font-size: 42px;" th:utext="${settings.index.materials.title}">Vật Liệu Thượng Hạng</h2>
+                    <p style="max-width: 700px; margin: 0 auto 60px auto;" th:text="${settings.index.materials.subtitle}">S-Housing tuyển chọn những nguồn nguyên liệu cao cấp nhất...</p>
+                </div>
+
+                <div class="materials-grid">
+                    <div class="material-card" th:each="material : ${settings.index.materials.items}">
+                        <div class="material-image">
+                            <img th:src="@{${material.image}}" th:alt="${material.title}" />
+                        </div>
+                        <div class="material-info">
+                            <h3 th:text="${material.title}">Gỗ Óc Chó (Walnut) Nhập Khẩu</h3>
+                            <p th:text="${material.desc}">Dòng gỗ 'vua' trong thiết kế nội thất...</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img th:src="@{/images/furniture_kitchen.png}" alt="Tủ bếp gỗ óc chó cao cấp" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h3>Không Gian Bếp Walnut</h3>
-                        <p>Hệ tủ bếp gỗ óc chó thượng hạng kết hợp mặt đá marble tự nhiên nguyên khối, thể hiện sự tinh tế.</p>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-img-wrapper">
-                        <img th:src="@{/images/furniture_bedroom.png}" alt="Nội thất phòng ngủ Master" class="project-img" />
-                    </div>
-                    <div class="project-content">
-                        <h3>Phòng Ngủ Master</h3>
-                        <p>Giường bọc nỉ êm ái kết hợp hệ tủ quần áo thông minh, ánh sáng dịu nhẹ mang lại giấc ngủ trọn vẹn.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="container text-center" style="margin-top: 30px;">
-                <a th:href="@{/du-an}" class="btn btn-outline-primary btn-large" style="border: 2px solid var(--primary-color); color: var(--primary-color); background: transparent; transition: all 0.3s ease; border-radius: 30px; font-weight: 600;" onmouseover="this.style.background='var(--primary-color)'; this.style.color='white';" onmouseout="this.style.background='transparent'; this.style.color='var(--primary-color)';">Xem Tất Cả Dự Án <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
             </div>
         </section>
+
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container text-center section-header">
+                <h2 th:utext="${settings.index.process.title}">Quy Trình Chuẩn Mực</h2>
+                <p th:text="${settings.index.process.subtitle}">Từ ý tưởng đến hiện thực hóa không gian sống mơ ước</p>
+            </div>
+            <div class="container process-steps">
+                <div class="process-step" th:each="step : ${settings.index.process.steps}">
+                    <div class="step-number" th:text="${step.num}">01</div>
+                    <h3 th:text="${step.title}">Tư Vấn & Khảo Sát</h3>
+                    <p th:text="${step.desc}">Lắng nghe nhu cầu và đo đạc hiện trạng thực tế.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Story Highlights (Full-Width Gallery) -->
+        <section class="success-gallery">
+            <div class="container text-center section-header">
+                <h2 th:utext="${settings.index.successGallery.title}">Dự Án Tiêu Biểu</h2>
+                <p th:text="${settings.index.successGallery.subtitle}">Những công trình đã khẳng định vị thế và tâm huyết của S-Housing</p>
+            </div>
+            <div class="container gallery-grid">
+                <div class="gallery-item" th:each="item : ${settings.index.successGallery.items}">
+                    <img th:src="@{${item.image}}" th:alt="${item.title}" />
+                    <div class="gallery-overlay">
+                        <h3 th:text="${item.title}">Villa Vinhomes Grand Park</h3>
+                        <p th:text="${item.desc}">Phong cách Tân cổ điển lịch lãm...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">
             <div class="container">
-                <h2>Bắt Đầu Hành Trình Kiến Tạo Không Gian Sống Của Bạn</h2>
-                <p>Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí từ đội ngũ KTS chuyên gia của S.Housing.</p>
-                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;">Liên Hệ Tư Vấn Ngay</a>
+                <h2 th:text="${settings.index.cta.title}">Sẵn Sàng Kiến Tạo Không Gian Của Bạn?</h2>
+                <p th:text="${settings.index.cta.subtitle}">Nhận ngay bản vẽ phác thảo và báo giá sơ bộ miễn phí...</p>
+                <a th:href="@{/lien-he}" class="btn btn-primary btn-large btn-glow" style="border-radius: 50px; font-size: 18px;" th:text="${settings.index.cta.btnLabel}">Liên Hệ Tư Vấn Miễn Phí</a>
             </div>
         </section>
 
