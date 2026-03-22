@@ -12,10 +12,10 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-section" th:style="'background-image: url(' + @{${settings.index.hero.bgImage}} + ');'">
-            <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(26, 32, 44, 0.8), rgba(0, 0, 0, 0.4));"></div>
+            <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1 style="font-weight: 800; letter-spacing: -1px; text-shadow: 0 4px 20px rgba(0,0,0,0.5);" th:utext="${settings.index.hero.title}">Kiến Tạo Không Gian Sống <br/><span style="color: var(--primary-color);">Hoàn Hảo</span> & Tiện Nghi</h1>
-                <p style="font-size: 20px; font-weight: 300; max-width: 700px; margin: 0 auto 40px auto; text-shadow: 0 2px 10px rgba(0,0,0,0.5);" th:text="${settings.index.hero.subtitle}">Giải pháp thiết kế và thi công nội thất trọn gói...</p>
+                <p class="hero-subtitle" style="margin-bottom: 40px;" th:text="${settings.index.hero.subtitle}">Giải pháp thiết kế và thi công nội thất trọn gói...</p>
                 <div class="hero-buttons">
                     <a th:href="@{/du-an}" class="btn btn-primary btn-large btn-glow" th:text="${settings.index.hero.primaryBtn}">Xem Dự Án Yêu Thích</a>
                     <a th:href="@{/lien-he}" class="btn btn-secondary btn-large" th:text="${settings.index.hero.secondaryBtn}">Nhận Báo Giá Ngay</a>

@@ -6,12 +6,10 @@
 
     <main>
         <!-- Modern Hero Section for Contact -->
-        <section class="interior-hero" th:style="'background-image: url(' + @{${settings['contact']['hero']['bgImage']}} + ');'">
+        <section class="interior-hero" th:style="'background-image: url(' + @{${settings.contact.hero.bgImage}} + ');'">
             <div class="hero-overlay"></div>
-            <div class="container" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: 100%;">
-                <h1 th:text="${settings['contact']['hero']['title']}">Liên Hệ Ngay</h1>
-                <p style="color: #eee; font-size: 20px; max-width: 600px; font-weight: 300;" th:text="${settings['contact']['subtitle']}">Để lại thông tin...</p>
-            </div>
+            <h1 th:text="${settings.contact.hero.title}">Liên Hệ Ngay</h1>
+            <p class="hero-subtitle" th:text="${settings.contact.hero.subtitle}">Subtitle</p>
         </section>
 
         <!-- Modern Contact Layout -->

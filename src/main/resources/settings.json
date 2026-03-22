@@ -178,6 +178,7 @@
   "design": {
     "hero": {
       "title": "Thiết Kế Nội Thất",
+      "subtitle": "Kiến tạo không gian độc bản, tối ưu từng mét vuông với phong cách kiến trúc hiện đại và cá nhân hóa tuyệt đối.",
       "bgImage": "/images/design_hero.png"
     },
     "intro": {
@@ -274,7 +275,11 @@
     }
   },
   "about": {
-    "hero": { "title": "Về Chúng Tôi", "bgImage": "/images/about_hero.png" },
+    "hero": { 
+      "title": "Về Chúng Tôi", 
+      "subtitle": "Hành trình 10 năm kiến tạo tổ ấm, nơi sự tận tâm gặp gỡ tinh hoa kiến trúc và công nghệ hiện đại.",
+      "bgImage": "/images/about_hero.png" 
+    },
     "sections": [
       {
         "title": "Lịch Sử Hình Thành",
@@ -301,8 +306,11 @@
     }
   },
   "contact": {
-    "hero": { "title": "Liên Hệ Ngay", "bgImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80" },
-    "subtitle": "Để lại thông tin hoặc liên hệ trực tiếp, chúng tôi sẽ phác thảo không gian sống mơ ước của bạn ngay hôm nay.",
+    "hero": { 
+      "title": "Liên Hệ Ngay", 
+      "subtitle": "Để lại thông tin hoặc liên hệ trực tiếp, chúng tôi sẽ phác thảo không gian sống mơ ước của bạn ngay hôm nay.",
+      "bgImage": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80" 
+    },
     "cards": [
       { "title": "Hotline Tư Vấn 24/7", "value": "090 123 4567", "link": "tel:0901234567", "linkLabel": "Gọi ngay", "icon": "phone" },
       { "title": "Chat Zalo Trực Tiếp", "value": "Nhận báo giá & bản vẽ mẫu", "link": "https://zalo.me/0901234567", "linkLabel": "Nhắn tin qua Zalo", "icon": "zalo", "color": "#0068FF" },
@@ -316,7 +324,11 @@
     }
   },
   "projects": {
-    "hero": { "title": "Dự Án Nổi Bật", "bgImage": "/images/projects_hero.png" },
+    "hero": { 
+      "title": "Dự Án Nổi Bật", 
+      "subtitle": "Chiêm ngưỡng những kiệt tác nội thất biệt thự, nhà phố và căn hộ hạng sang được thi công bởi TT. Furniture.",
+      "bgImage": "/images/projects_hero.png" 
+    },
     "sections": [
       {
         "title": "Dự Án Nội Thất & Đồ Gỗ Cao Cấp",
@@ -345,7 +357,11 @@
     ]
   },
   "news": {
-    "hero": { "title": "Tin Tức & Kiến Thức", "bgImage": "/images/news_hero.png" },
+    "hero": { 
+      "title": "Tin Tức & Kiến Thức", 
+      "subtitle": "Cập nhật những xu hướng thiết kế mới nhất, mẹo trang trí nhà cửa và kiến thức phong thủy hữu ích.",
+      "bgImage": "/images/news_hero.png" 
+    },
     "articles": [
       { "category": "XU HƯỚNG", "title": "Xu Hướng Thiết Kế 2026: Không Gian Xanh & Curve Design", "desc": "Năm 2026 đang chứng kiến sự bùng nổ của thiết kế xanh, vật liệu tái chế.", "image": "/images/furniture_living_room.png" },
       { "category": "PHONG THỦY", "title": "Cách Bố Trí Phòng Khách Chuẩn Phong Thủy Đón Tài Lộc", "desc": "Màu sắc tường nhà, hướng bàn ghế sofa ảnh hưởng lớn đến vận khí gia chủ.", "image": "/images/feng_shui_interior.png" },
@@ -353,7 +369,11 @@
     ]
   },
   "fengShui": {
-    "hero": { "title": "Phong Thủy Không Gian", "bgImage": "/images/feng_shui_hero.png" },
+    "hero": { 
+      "title": "Phong Thủy Không Gian", 
+      "subtitle": "Sự giao thoa giữa nghệ thuật sắp đặt và quy luật năng lượng, mang lại hưng thịnh và bình an cho gia chủ.",
+      "bgImage": "/images/feng_shui_hero.png" 
+    },
     "intro": {
       "title": "Tính Sinh Khí Cho Ngôi Nhà",
       "desc": "Phong thủy không chỉ là vị trí đặt để, đó là sự cân bằng các luồng khí, lựa chọn màu sắc hợp cung bản mệnh and bố trí hình khối phù hợp. Chúng tôi áp dụng phong thủy hiện đại nhưng vẫn tôn trọng giá trị truyền thống để mang lại sức khỏe and tài lộc cho gia chủ.",
@@ -370,7 +390,11 @@
     }
   },
   "construction": {
-    "hero": { "title": "Thi Công Nội Thất", "bgImage": "/images/construction_hero.png" },
+    "hero": { 
+      "title": "Thi Công Nội Thất", 
+      "subtitle": "Quy trình thi công chuyên nghiệp, xưởng sản xuất trực tiếp đảm bảo chất lượng tinh xảo trong từng mối ghép.",
+      "bgImage": "/images/construction_hero.png" 
+    },
     "facility": {
       "title": "Cơ Sở Vật Chất Hiện Đại",
       "desc": "Khác với các đơn vị thiết kế thuê ngoài, TT. Furniture sở hữu xưởng sản xuất quy mô lớn tại Củ Chi với dàn máy móc CNC hiện đại, giúp kiểm soát 100% chất lượng từ nguyên liệu đến thành phẩm. Điều này giúp chúng tôi đảm bảo tiến độ and cam kết không phát sinh chi phí.",
