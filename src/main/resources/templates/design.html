@@ -29,13 +29,18 @@
                 <div th:each="category, iter : ${settings.design.categories}" th:class="${iter.index % 2 != 0} ? 'category-section alt' : 'category-section'">
                     <h3 class="category-title" th:text="${category.title}">Category Title</h3>
                     <div class="services-grid">
-                        <div class="project-card" th:each="project : ${category.projects}">
+                        <div class="project-card" th:each="project : ${category.projects}"
+                             th:data-images="${#strings.arrayJoin(project.images, ',')}"
+                             th:data-title="${project.title}"
+                             onclick="openProjectLightbox(this)"
+                             style="cursor: pointer;">
                             <div class="project-img-wrapper">
-                                <img th:src="@{${project.image}}" th:alt="${project.title}" class="project-img" />
+                                <img th:src="@{${project.images[0]}}" th:alt="${project.title}" class="project-img" />
                             </div>
                             <div class="project-content">
                                 <h3 th:text="${project.title}">Project Title</h3>
                                 <p th:text="${project.desc}">Project description...</p>
+                                <span class="view-details" style="color: var(--primary-color); font-weight: 700; border-bottom: 2px solid var(--primary-color); display: inline-block; margin-top: 10px;">Xem chi tiết &rarr;</span>
                             </div>
                         </div>
                     </div>
@@ -66,5 +71,6 @@
     </main>
 
     <footer th:replace="~{fragments/footer :: footer}"></footer>
+    <div th:replace="~{fragments/lightbox :: lightbox}"></div>
 </body>
 </html>

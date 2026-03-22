@@ -17,13 +17,18 @@
                     <p style="color: var(--text-light); max-width: 700px; margin: 0 auto;" th:text="${section.subtitle}">Section subtitle...</p>
                 </div>
                 <div class="services-grid">
-                    <div th:each="item : ${section.items}" class="project-card">
+                    <div th:each="item : ${section.items}" class="project-card" 
+                         th:data-images="${#strings.arrayJoin(item.images, ',')}"
+                         th:data-title="${item.title}"
+                         onclick="openProjectLightbox(this)"
+                         style="cursor: pointer;">
                         <div class="project-img-wrapper">
-                            <img th:src="@{${item.image}}" th:alt="${item.title}" class="project-img" />
+                            <img th:src="@{${item.images[0]}}" th:alt="${item.title}" class="project-img" />
                         </div>
                         <div class="project-content">
                             <h3 th:text="${item.title}">Project Title</h3>
                             <p th:text="${item.desc}">Project description...</p>
+                            <span class="view-details" style="color: var(--primary-color); font-weight: 700; border-bottom: 2px solid var(--primary-color); display: inline-block; margin-top: 10px;">Xem chi tiết &rarr;</span>
                         </div>
                     </div>
                 </div>
@@ -40,5 +45,6 @@
     </main>
 
     <footer th:replace="~{fragments/footer :: footer}"></footer>
+    <div th:replace="~{fragments/lightbox :: lightbox}"></div>
 </body>
 </html>
