@@ -82,6 +82,50 @@
             </div>
         </section>
 
+        <!-- Featured Furniture Projects -->
+        <section class="furniture-projects-section" style="background-color: #fcfcfc;">
+            <div class="container text-center section-header">
+                <h2>Dự Án Nội Thất <span style="color: var(--primary-color);">Điển Hình</span></h2>
+                <p>Khám phá không gian sống đẳng cấp được kiến tạo bởi đội ngũ thiết kế chuyên nghiệp</p>
+            </div>
+            
+            <div class="container services-grid" style="margin-top: 40px; margin-bottom: 40px;">
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img th:src="@{/images/furniture_living_room.png}" alt="Nội thất phòng khách hiện đại" class="project-img" />
+                    </div>
+                    <div class="project-content">
+                        <h3>Phòng Khách Luxury</h3>
+                        <p>Không gian mở với sofa da cao cấp, bàn trà minimalist và tủ TV gỗ óc chó nguyên khối sang trọng.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img th:src="@{/images/furniture_kitchen.png}" alt="Tủ bếp gỗ óc chó cao cấp" class="project-img" />
+                    </div>
+                    <div class="project-content">
+                        <h3>Không Gian Bếp Walnut</h3>
+                        <p>Hệ tủ bếp gỗ óc chó thượng hạng kết hợp mặt đá marble tự nhiên nguyên khối, thể hiện sự tinh tế.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img-wrapper">
+                        <img th:src="@{/images/furniture_bedroom.png}" alt="Nội thất phòng ngủ Master" class="project-img" />
+                    </div>
+                    <div class="project-content">
+                        <h3>Phòng Ngủ Master</h3>
+                        <p>Giường bọc nỉ êm ái kết hợp hệ tủ quần áo thông minh, ánh sáng dịu nhẹ mang lại giấc ngủ trọn vẹn.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container text-center" style="margin-top: 30px;">
+                <a th:href="@{/du-an}" class="btn btn-outline-primary btn-large" style="border: 2px solid var(--primary-color); color: var(--primary-color); background: transparent; transition: all 0.3s ease; border-radius: 30px; font-weight: 600;" onmouseover="this.style.background='var(--primary-color)'; this.style.color='white';" onmouseout="this.style.background='transparent'; this.style.color='var(--primary-color)';">Xem Tất Cả Dự Án <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+            </div>
+        </section>
+
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">
             <div class="container">
