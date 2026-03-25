@@ -11,12 +11,10 @@
   },
   "nav": [
     {"label": "Trang Chủ", "url": "/"},
-    {"label": "Về Chúng Tôi", "url": "/ve-chung-toi"},
     {"label": "Thiết Kế Nội Thất", "url": "/thiet-ke-noi-that"},
     {"label": "Thi Công Nội Thất", "url": "/thi-cong-noi-that"},
-    {"label": "Phong Thủy", "url": "/phong-thuy"},
     {"label": "Dự Án", "url": "/du-an"},
-    {"label": "Tin Tức", "url": "/tin-tuc"},
+    {"label": "Về Chúng Tôi", "url": "/ve-chung-toi"},
     {"label": "Liên Hệ", "url": "/lien-he"}
   ],
   "index": {
@@ -37,14 +35,10 @@
       "title": "Dịch Vụ Nổi Bật Tại TT. Furniture",
       "subtitle": "Khẳng định chất lượng qua từng không gian sống",
       "items": [
-        {"icon": "📐", "title": "Thiết Kế Nội Thất", "desc": "Sáng tạo không gian mang đậm dấu ấn cá nhân, tối ưu hóa công năng và thẩm mỹ."},
-        {"icon": "🔮", "title": "Thiết Kế Phong Thủy", "desc": "Ứng dụng chuyên sâu yếu tố phong thủy giúp gia chủ đón nhận tài lộc và bình an.", "highlight": true},
-        {"icon": "👓", "title": "Công Nghệ VR 4D", "desc": "Trải nghiệm thực tế ảo không gian nhà bạn trước khi tiến hành thi công thực tế."},
-        {"icon": "🔨", "title": "Thi Công Trọn Gói", "desc": "Xưởng sản xuất riêng biệt, kiểm soát chặt chẽ quá trình sản xuất và thi công hoàn thiện."},
-        {"icon": "🏛️", "title": "Tư Vấn Kiến Trúc", "desc": "Quy hoạch không gian tổng thể, tối ưu diện tích và công năng sử dụng vượt trội."},
-        {"icon": "🌳", "title": "Thiết Kế Cảnh Quan", "desc": "Kiến tạo không gian xanh, sân vườn mang lại sự thư thái và mát mẻ cho gia đình."},
-        {"icon": "🛋️", "title": "Sản Xuất Đồ Gỗ", "desc": "Sản xuất nội thất may đo theo kích thước riêng, phù hợp tuyệt đối với căn hộ."},
-        {"icon": "🛠️", "title": "Cải Tạo Không Gian", "desc": "Nâng cấp không gian sống cũ thành diện mạo mới hiện đại và sang trọng bậc nhất."}
+        {"icon": "✍️", "title": "Thiết Kế Nội Thất", "desc": "Sáng tạo không gian mang đậm dấu ấn cá nhân, tối ưu hóa công năng và thẩm mỹ với bản vẽ 3D chi tiết.", "highlight": true},
+        {"icon": "🛋️", "title": "Sản Xuất Đồ Gỗ", "desc": "Sản xuất nội thất may đo tại xưởng riêng với gỗ An Cường chính hãng, đảm bảo độ tinh xảo cao nhất."},
+        {"icon": "🏗️", "title": "Thi Công Trọn Gói", "desc": "Dịch vụ chìa khóa trao tay, kiểm soát chặt chẽ từ phần thô đến hoàn thiện nội thất, cam kết đúng tiến độ."},
+        {"icon": "🏠", "title": "Cải Tạo Không Gian", "desc": "Nâng cấp diện mạo ngôi nhà cũ thành không gian sống hiện đại, sang trọng và tối ưu hóa diện tích sử dụng."}
       ]
     },
     "about": {
@@ -355,39 +349,6 @@
         ]
       }
     ]
-  },
-  "news": {
-    "hero": { 
-      "title": "Tin Tức & Kiến Thức", 
-      "subtitle": "Cập nhật những xu hướng thiết kế mới nhất, mẹo trang trí nhà cửa và kiến thức phong thủy hữu ích.",
-      "bgImage": "/images/news_hero.png" 
-    },
-    "articles": [
-      { "category": "XU HƯỚNG", "title": "Xu Hướng Thiết Kế 2026: Không Gian Xanh & Curve Design", "desc": "Năm 2026 đang chứng kiến sự bùng nổ của thiết kế xanh, vật liệu tái chế.", "image": "/images/furniture_living_room.png" },
-      { "category": "PHONG THỦY", "title": "Cách Bố Trí Phòng Khách Chuẩn Phong Thủy Đón Tài Lộc", "desc": "Màu sắc tường nhà, hướng bàn ghế sofa ảnh hưởng lớn đến vận khí gia chủ.", "image": "/images/feng_shui_interior.png" },
-      { "category": "CÔNG NGHỆ", "title": "Lợi ích Của Công Nghệ VR 4D Trong Thiết Kế Nội Thất", "desc": "Khám phá cách VR giúp gia chủ tiết kiệm thời gian and đảm bảo hài lòng tuyệt đối.", "image": "/images/design_vr.png" }
-    ]
-  },
-  "fengShui": {
-    "hero": { 
-      "title": "Phong Thủy Không Gian", 
-      "subtitle": "Sự giao thoa giữa nghệ thuật sắp đặt và quy luật năng lượng, mang lại hưng thịnh và bình an cho gia chủ.",
-      "bgImage": "/images/feng_shui_hero.png" 
-    },
-    "intro": {
-      "title": "Tính Sinh Khí Cho Ngôi Nhà",
-      "desc": "Phong thủy không chỉ là vị trí đặt để, đó là sự cân bằng các luồng khí, lựa chọn màu sắc hợp cung bản mệnh and bố trí hình khối phù hợp. Chúng tôi áp dụng phong thủy hiện đại nhưng vẫn tôn trọng giá trị truyền thống để mang lại sức khỏe and tài lộc cho gia chủ.",
-      "image": "/images/feng_shui_interior.png"
-    },
-    "consult": {
-      "title": "Dịch Vụ Tư Vấn Đặc Biệt",
-      "desc": "Khi lựa chọn thi công tại TT. Furniture, gia chủ sẽ được chuyên gia phong thủy của chúng tôi tư vấn các nguyên tắc vàng để đón cát, tránh hung:",
-      "services": [
-        { "icon": "🛌", "title": "Vị Trí Kê Giường", "desc": "Đảm bảo giấc ngủ sâu, tái tạo năng lượng and sức khỏe dồi dào." },
-        { "icon": "🔥", "title": "Hướng Bếp", "desc": "Giữ lửa hạnh phúc, thúc đẩy tài vận and hòa khí trong gia đình." },
-        { "icon": "🛋️", "title": "Bố Trí Phòng Khách", "desc": "Tạo luồng khí thông thoáng, đón nhận cơ hội and may mắn vào nhà.", "highlight": true }
-      ]
-    }
   },
   "construction": {
     "hero": { 

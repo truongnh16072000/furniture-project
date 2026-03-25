@@ -52,20 +52,12 @@ public class HomeController {
         return "construction";
     }
 
-    @GetMapping("/phong-thuy")
-    public String fengShui() {
-        return "feng-shui";
-    }
 
     @GetMapping("/du-an")
     public String projects() {
         return "projects";
     }
 
-    @GetMapping("/tin-tuc")
-    public String news() {
-        return "news";
-    }
 
     @GetMapping("/lien-he")
     public String contact() {

@@ -72,28 +72,6 @@
             </div>
         </section>
 
-        <!-- About Intro Section (Why Choose Us) -->
-        <section class="about-section" style="background-color: var(--bg-white); padding-bottom: 0;">
-            <div class="container flex-row" style="align-items: center;">
-                <div class="about-image" style="position: relative;">
-                    <img th:src="@{${settings.index.about.image}}" alt="Thi công nội thất TT. Furniture" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
-                    <div style="position: absolute; bottom: -30px; right: -30px; background: var(--primary-color); color: white; padding: 30px; border-radius: 50%; width: 140px; height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(201, 147, 57, 0.4);">
-                        <strong style="font-size: 32px; line-height: 1;" th:text="${settings.index.about.expValue}">10+</strong>
-                        <span style="font-size: 14px; text-align: center;" th:text="${settings.index.about.expLabel}">Năm Kinh Nghiệm</span>
-                    </div>
-                </div>
-                <div class="about-text" style="padding-left: 40px;">
-                    <h2 style="font-size: 46px; margin-bottom: 25px; color: var(--secondary-color);" th:utext="${settings.index.about.title}">Vì Sao Khách Hàng Chọn ...</h2>
-                    <p style="font-size: 18px; line-height: 1.8; color: var(--text-color); margin-bottom: 35px;" th:text="${settings.index.about.desc}">Chúng tôi không chỉ cung cấp dịch vụ thiết kế đơn thuần...</p>
-                    
-                    <ul class="check-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 40px;">
-                        <li th:each="point : ${settings.index.about.checkList}" style="font-size: 16px; display: flex; align-items: center;" th:text="${point}">Point</li>
-                    </ul>
-                    <a th:href="@{/ve-chung-toi}" class="btn btn-primary btn-large btn-glow" style="border-radius: 30px;" th:text="${settings.index.about.btnLabel}">Tìm Hiểu Thêm Về Chúng Tôi</a>
-                </div>
-            </div>
-        </section>
-
         <!-- Material Excellence Section -->
         <section class="materials-section">
             <div class="container">
@@ -131,8 +109,27 @@
             </div>
         </section>
 
-
-
+        <!-- About Intro Section (Why Choose Us) -->
+        <section class="about-section" style="background-color: var(--bg-white); padding-bottom: 0;">
+            <div class="container flex-row" style="align-items: center;">
+                <div class="about-image" style="position: relative;">
+                    <img th:src="@{${settings.index.about.image}}" alt="Thi công nội thất TT. Furniture" style="border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" />
+                    <div style="position: absolute; bottom: -30px; right: -30px; background: var(--primary-color); color: white; padding: 30px; border-radius: 50%; width: 140px; height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 10px 30px rgba(201, 147, 57, 0.4);">
+                        <strong style="font-size: 32px; line-height: 1;" th:text="${settings.index.about.expValue}">10+</strong>
+                        <span style="font-size: 14px; text-align: center;" th:text="${settings.index.about.expLabel}">Năm Kinh Nghiệm</span>
+                    </div>
+                </div>
+                <div class="about-text" style="padding-left: 40px;">
+                    <h2 style="font-size: 46px; margin-bottom: 25px; color: var(--secondary-color);" th:utext="${settings.index.about.title}">Vì Sao Khách Hàng Chọn <br/><span style='color: var(--primary-color);'>TT. Furniture?</span></h2>
+                    <p style="font-size: 18px; line-height: 1.8; color: var(--text-color); margin-bottom: 35px;" th:text="${settings.index.about.desc}">Chúng tôi không chỉ cung cấp dịch vụ thiết kế đơn thuần...</p>
+                    
+                    <ul class="check-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 40px;">
+                        <li th:each="point : ${settings.index.about.checkList}" style="font-size: 16px; display: flex; align-items: center;" th:text="${point}">Point</li>
+                    </ul>
+                    <a th:href="@{/ve-chung-toi}" class="btn btn-primary btn-large btn-glow" style="border-radius: 30px;" th:text="${settings.index.about.btnLabel}">Tìm Hiểu Thêm Về Chúng Tôi</a>
+                </div>
+            </div>
+        </section>
 
         <!-- Dynamic CTA Banner -->
         <section class="cta-banner">

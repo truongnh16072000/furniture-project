@@ -19,7 +19,7 @@
             <div class="footer-widget links-widget">
                 <h3>Dịch Vụ</h3>
                 <ul>
-                    <li th:each="item : ${settings.nav}" th:if="${item.url != '/' and item.url != '/lien-he' and item.url != '/tin-tuc'}">
+                    <li th:each="item : ${settings.nav}" th:if="${item.url == '/thiet-ke-noi-that' or item.url == '/thi-cong-noi-that' or item.url == '/du-an'}">
                         <a th:href="@{${item.url}}" th:text="${item.label}">Thiết kế kiến trúc</a>
                     </li>
                 </ul>
@@ -63,6 +63,9 @@
             <span class="tooltip" th:text="'Gọi Hotline: ' + ${settings.site.phone}">Gọi Hotline: 090 123 4567</span>
         </a>
     </div>
+    
+    <!-- Consultation Modal Overlay -->
+    <div th:replace="~{fragments/consultation :: consultation}"></div>
 </footer>
 </body>
 </html>

@@ -175,3 +175,167 @@
 2026-03-22 23:04 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
 2026-03-22 23:04 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
 2026-03-22 23:04 +07:00: 	... 12 more
+2026-03-22 23:15 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-22 23:15 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-22 23:15 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-22 23:15 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-22 23:15 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-22 23:15 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-22 23:15 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-22 23:15 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-22 23:15 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-22 23:15 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-22 23:15 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-22 23:15 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-22 23:15 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-22 23:15 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-22 23:15 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-22 23:15 +07:00: 	... 12 more
+2026-03-22 23:37 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-22 23:37 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-22 23:37 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-22 23:37 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-22 23:37 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-22 23:37 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-22 23:37 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-22 23:37 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-22 23:37 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-22 23:37 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-22 23:37 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-22 23:37 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-22 23:37 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-22 23:37 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-22 23:37 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-22 23:37 +07:00: 	... 12 more
+2026-03-22 23:40 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-22 23:40 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-22 23:40 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-22 23:40 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-22 23:40 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-22 23:40 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-22 23:40 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-22 23:40 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-22 23:40 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-22 23:40 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-22 23:40 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-22 23:40 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-22 23:40 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-22 23:40 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-22 23:40 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-22 23:40 +07:00: 	... 12 more
+2026-03-23 00:06 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-23 00:06 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-23 00:06 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-23 00:06 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-23 00:06 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-23 00:06 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-23 00:06 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-23 00:06 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-23 00:06 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-23 00:06 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-23 00:06 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-23 00:06 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-23 00:06 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-23 00:06 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-23 00:06 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-23 00:06 +07:00: 	... 12 more
+2026-03-25 14:49 +07:00: Exception in thread "http-nio-8080-exec-9" 
+2026-03-25 14:49 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-25 14:49 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-25 14:49 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-25 14:49 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-25 14:49 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-25 14:49 +07:00: 	at org.slf4j.bridge.SLF4JBridgeHandler.callLocationAwareLogger(SLF4JBridgeHandler.java:232)
+2026-03-25 14:49 +07:00: 	at org.slf4j.bridge.SLF4JBridgeHandler.publish(SLF4JBridgeHandler.java:313)
+2026-03-25 14:49 +07:00: 	at java.logging/java.util.logging.Logger.log(Logger.java:983)
+2026-03-25 14:49 +07:00: 	at java.logging/java.util.logging.Logger.doLog(Logger.java:1010)
+2026-03-25 14:49 +07:00: 	at java.logging/java.util.logging.Logger.logp(Logger.java:1287)
+2026-03-25 14:49 +07:00: 	at org.apache.juli.logging.DirectJDKLog.log(DirectJDKLog.java:170)
+2026-03-25 14:49 +07:00: 	at org.apache.juli.logging.DirectJDKLog.error(DirectJDKLog.java:141)
+2026-03-25 14:49 +07:00: 	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+2026-03-25 14:49 +07:00: 	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+2026-03-25 14:49 +07:00: 	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+2026-03-25 14:49 +07:00: 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+2026-03-25 14:49 +07:00: 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+2026-03-25 14:49 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-25 14:49 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-25 14:49 +07:00: 	... 17 more
+2026-03-25 14:50 +07:00: Exception in thread "SpringApplicationShutdownHook" java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-25 14:50 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-25 14:50 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-25 14:50 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-25 14:50 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-25 14:50 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-25 14:50 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-25 14:50 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-25 14:50 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-25 14:50 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-25 14:50 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-25 14:50 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-25 14:50 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-25 14:50 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-25 14:50 +07:00: 	... 12 more
+2026-03-25 14:52 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-25 14:52 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-25 14:52 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-25 14:52 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-25 14:52 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-25 14:52 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-25 14:52 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-25 14:52 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-25 14:52 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-25 14:52 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-25 14:52 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-25 14:52 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-25 14:52 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-25 14:52 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-25 14:52 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-25 14:52 +07:00: 	... 12 more
+2026-03-25 14:54 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-25 14:54 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-25 14:54 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-25 14:54 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-25 14:54 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-25 14:54 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-25 14:54 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-25 14:54 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-25 14:54 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-25 14:54 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-25 14:54 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-25 14:54 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-25 14:54 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-25 14:54 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-25 14:54 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-25 14:54 +07:00: 	... 12 more
+2026-03-25 15:07 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-25 15:07 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-25 15:07 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-25 15:07 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-25 15:07 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-25 15:07 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-25 15:07 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-25 15:07 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-25 15:07 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-25 15:07 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-25 15:07 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-25 15:07 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-25 15:07 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-25 15:07 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-25 15:07 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-25 15:07 +07:00: 	... 12 more
+2026-03-25 15:10 +07:00: Exception in thread "SpringApplicationShutdownHook" 
+2026-03-25 15:10 +07:00: java.lang.NoClassDefFoundError: ch/qos/logback/classic/spi/ThrowableProxy
+2026-03-25 15:10 +07:00: 	at ch.qos.logback.classic.spi.LoggingEvent.<init>(LoggingEvent.java:145)
+2026-03-25 15:10 +07:00: 	at ch.qos.logback.classic.Logger.buildLoggingEventAndAppend(Logger.java:429)
+2026-03-25 15:10 +07:00: 	at ch.qos.logback.classic.Logger.filterAndLog_0_Or3Plus(Logger.java:388)
+2026-03-25 15:10 +07:00: 	at ch.qos.logback.classic.Logger.log(Logger.java:805)
+2026-03-25 15:10 +07:00: 	at org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog.warn(LogAdapter.java:445)
+2026-03-25 15:10 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1199)
+2026-03-25 15:10 +07:00: 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179)
+2026-03-25 15:10 +07:00: 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1150)
+2026-03-25 15:10 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+2026-03-25 15:10 +07:00: 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+2026-03-25 15:10 +07:00: 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+2026-03-25 15:10 +07:00: 	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-03-25 15:10 +07:00: Caused by: java.lang.ClassNotFoundException: ch.qos.logback.classic.spi.ThrowableProxy
+2026-03-25 15:10 +07:00: 	... 12 more

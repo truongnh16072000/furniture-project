@@ -2615,3 +2615,269 @@
 2026-03-22 23:04 +07:00: 2026-03-22T23:04:41.419+07:00  INFO 34018 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2026-03-22 23:04 +07:00: 2026-03-22T23:04:41.420+07:00  INFO 34018 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2026-03-22 23:04 +07:00: 2026-03-22T23:04:41.420+07:00  INFO 34018 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-22 23:15 +07:00: 
+2026-03-22 23:15 +07:00:   .   ____          _            __ _ _
+2026-03-22 23:15 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-22 23:15 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-22 23:15 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-22 23:15 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-22 23:15 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-22 23:15 +07:00: 
+2026-03-22 23:15 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-22 23:15 +07:00: 
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:38.869+07:00  INFO 35039 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 35039 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:38.870+07:00  INFO 35039 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.112+07:00  INFO 35039 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.117+07:00  INFO 35039 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.117+07:00  INFO 35039 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.127+07:00  INFO 35039 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.127+07:00  INFO 35039 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 245 ms
+2026-03-22 23:15 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, news, fengShui, construction]
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.175+07:00  INFO 35039 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.251+07:00  INFO 35039 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-22 23:15 +07:00: 2026-03-22T23:15:39.256+07:00  INFO 35039 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.503 seconds (process running for 0.692)
+2026-03-22 23:16 +07:00: 2026-03-22T23:16:09.395+07:00  INFO 35039 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-22 23:16 +07:00: 2026-03-22T23:16:09.396+07:00  INFO 35039 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-22 23:16 +07:00: 2026-03-22T23:16:09.396+07:00  INFO 35039 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-22 23:37 +07:00: 
+2026-03-22 23:37 +07:00:   .   ____          _            __ _ _
+2026-03-22 23:37 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-22 23:37 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-22 23:37 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-22 23:37 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-22 23:37 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-22 23:37 +07:00: 
+2026-03-22 23:37 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-22 23:37 +07:00: 
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.542+07:00  INFO 36665 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 36665 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.543+07:00  INFO 36665 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.810+07:00  INFO 36665 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.816+07:00  INFO 36665 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.816+07:00  INFO 36665 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.826+07:00  INFO 36665 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.827+07:00  INFO 36665 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 267 ms
+2026-03-22 23:37 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, news, fengShui, construction]
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.876+07:00  INFO 36665 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.960+07:00  INFO 36665 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:31.965+07:00  INFO 36665 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.542 seconds (process running for 0.72)
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:52.011+07:00  INFO 36665 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:52.011+07:00  INFO 36665 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-22 23:37 +07:00: 2026-03-22T23:37:52.012+07:00  INFO 36665 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-22 23:40 +07:00: 
+2026-03-22 23:40 +07:00:   .   ____          _            __ _ _
+2026-03-22 23:40 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-22 23:40 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-22 23:40 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-22 23:40 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-22 23:40 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-22 23:40 +07:00: 
+2026-03-22 23:40 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-22 23:40 +07:00: 
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.655+07:00  INFO 36968 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 36968 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.656+07:00  INFO 36968 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.908+07:00  INFO 36968 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.913+07:00  INFO 36968 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.913+07:00  INFO 36968 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.923+07:00  INFO 36968 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.924+07:00  INFO 36968 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 253 ms
+2026-03-22 23:40 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, news, fengShui, construction]
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:14.971+07:00  INFO 36968 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:15.048+07:00  INFO 36968 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-22 23:40 +07:00: 2026-03-22T23:40:15.053+07:00  INFO 36968 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.514 seconds (process running for 0.694)
+2026-03-23 00:02 +07:00: 2026-03-23T00:02:44.256+07:00  INFO 36968 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23 00:02 +07:00: 2026-03-23T00:02:44.257+07:00  INFO 36968 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-23 00:02 +07:00: 2026-03-23T00:02:44.265+07:00  INFO 36968 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2026-03-23 00:06 +07:00: 
+2026-03-23 00:06 +07:00:   .   ____          _            __ _ _
+2026-03-23 00:06 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-23 00:06 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-23 00:06 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-23 00:06 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-23 00:06 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-23 00:06 +07:00: 
+2026-03-23 00:06 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-23 00:06 +07:00: 
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.273+07:00  INFO 38060 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 38060 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.274+07:00  INFO 38060 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.519+07:00  INFO 38060 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.524+07:00  INFO 38060 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.524+07:00  INFO 38060 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.533+07:00  INFO 38060 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.533+07:00  INFO 38060 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 244 ms
+2026-03-23 00:06 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, news, fengShui, construction]
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.580+07:00  INFO 38060 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.657+07:00  INFO 38060 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:49.662+07:00  INFO 38060 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.507 seconds (process running for 0.69)
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:51.618+07:00  INFO 38060 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:51.619+07:00  INFO 38060 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-23 00:06 +07:00: 2026-03-23T00:06:51.619+07:00  INFO 38060 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-23 19:15 +07:00: 
+2026-03-23 19:15 +07:00:   .   ____          _            __ _ _
+2026-03-23 19:15 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-23 19:15 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-23 19:15 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-23 19:15 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-23 19:15 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-23 19:15 +07:00: 
+2026-03-23 19:15 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-23 19:15 +07:00: 
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.197+07:00  INFO 48869 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 48869 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.199+07:00  INFO 48869 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.553+07:00  INFO 48869 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.558+07:00  INFO 48869 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.558+07:00  INFO 48869 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.570+07:00  INFO 48869 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.570+07:00  INFO 48869 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 343 ms
+2026-03-23 19:15 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, news, fengShui, construction]
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.620+07:00  INFO 48869 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.716+07:00  INFO 48869 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-23 19:15 +07:00: 2026-03-23T19:15:55.721+07:00  INFO 48869 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.675 seconds (process running for 0.855)
+2026-03-23 21:40 +07:00: 2026-03-23T21:40:29.961+07:00  INFO 48869 --- [furniture-project] [nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-23 21:40 +07:00: 2026-03-23T21:40:29.965+07:00  INFO 48869 --- [furniture-project] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-23 21:40 +07:00: 2026-03-23T21:40:29.980+07:00  INFO 48869 --- [furniture-project] [nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2026-03-25 14:50 +07:00: 
+2026-03-25 14:50 +07:00:   .   ____          _            __ _ _
+2026-03-25 14:50 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-25 14:50 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-25 14:50 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-25 14:50 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-25 14:50 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-25 14:50 +07:00: 
+2026-03-25 14:50 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-25 14:50 +07:00: 
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.700+07:00  INFO 72952 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 72952 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.701+07:00  INFO 72952 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.930+07:00  INFO 72952 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.934+07:00  INFO 72952 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.934+07:00  INFO 72952 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.942+07:00  INFO 72952 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.943+07:00  INFO 72952 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 231 ms
+2026-03-25 14:50 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, construction]
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:15.986+07:00  INFO 72952 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:16.057+07:00  INFO 72952 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:16.062+07:00  INFO 72952 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.477 seconds (process running for 0.643)
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:16.383+07:00  INFO 72952 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:16.383+07:00  INFO 72952 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-25 14:50 +07:00: 2026-03-25T14:50:16.383+07:00  INFO 72952 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-25 14:52 +07:00: 
+2026-03-25 14:52 +07:00:   .   ____          _            __ _ _
+2026-03-25 14:52 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-25 14:52 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-25 14:52 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-25 14:52 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-25 14:52 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-25 14:52 +07:00: 
+2026-03-25 14:52 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-25 14:52 +07:00: 
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:07.685+07:00  INFO 73498 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 73498 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:07.686+07:00  INFO 73498 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:07.949+07:00  INFO 73498 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:07.953+07:00  INFO 73498 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:07.953+07:00  INFO 73498 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:07.962+07:00  INFO 73498 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:07.962+07:00  INFO 73498 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 258 ms
+2026-03-25 14:52 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, construction]
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:08.006+07:00  INFO 73498 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:08.089+07:00  INFO 73498 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:08.095+07:00  INFO 73498 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.536 seconds (process running for 0.701)
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:48.810+07:00  INFO 73498 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:48.810+07:00  INFO 73498 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-25 14:52 +07:00: 2026-03-25T14:52:48.811+07:00  INFO 73498 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-25 14:54 +07:00: 
+2026-03-25 14:54 +07:00:   .   ____          _            __ _ _
+2026-03-25 14:54 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-25 14:54 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-25 14:54 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-25 14:54 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-25 14:54 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-25 14:54 +07:00: 
+2026-03-25 14:54 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-25 14:54 +07:00: 
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.192+07:00  INFO 74134 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 74134 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.193+07:00  INFO 74134 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.455+07:00  INFO 74134 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.460+07:00  INFO 74134 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.460+07:00  INFO 74134 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.470+07:00  INFO 74134 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.470+07:00  INFO 74134 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 260 ms
+2026-03-25 14:54 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, construction]
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.520+07:00  INFO 74134 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.598+07:00  INFO 74134 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 14:54 +07:00: 2026-03-25T14:54:58.604+07:00  INFO 74134 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.533 seconds (process running for 0.696)
+2026-03-25 14:55 +07:00: 2026-03-25T14:55:02.284+07:00  INFO 74134 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 14:55 +07:00: 2026-03-25T14:55:02.284+07:00  INFO 74134 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-25 14:55 +07:00: 2026-03-25T14:55:02.285+07:00  INFO 74134 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-25 15:07 +07:00: 
+2026-03-25 15:07 +07:00:   .   ____          _            __ _ _
+2026-03-25 15:07 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-25 15:07 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-25 15:07 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-25 15:07 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-25 15:07 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-25 15:07 +07:00: 
+2026-03-25 15:07 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-25 15:07 +07:00: 
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:32.782+07:00  INFO 74884 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 74884 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:32.783+07:00  INFO 74884 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.019+07:00  INFO 74884 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.024+07:00  INFO 74884 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.024+07:00  INFO 74884 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.033+07:00  INFO 74884 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.033+07:00  INFO 74884 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 238 ms
+2026-03-25 15:07 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, construction]
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.076+07:00  INFO 74884 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.152+07:00  INFO 74884 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 15:07 +07:00: 2026-03-25T15:07:33.157+07:00  INFO 74884 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.491 seconds (process running for 0.66)
+2026-03-25 15:08 +07:00: 2026-03-25T15:08:42.726+07:00  INFO 74884 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 15:08 +07:00: 2026-03-25T15:08:42.727+07:00  INFO 74884 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-25 15:08 +07:00: 2026-03-25T15:08:42.728+07:00  INFO 74884 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-25 15:08 +07:00: 2026-03-25T15:08:59.645+07:00  INFO 74884 --- [furniture-project] [ionShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-03-25 15:08 +07:00: 2026-03-25T15:08:59.651+07:00  INFO 74884 --- [furniture-project] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-03-25 15:09 +07:00: 
+2026-03-25 15:09 +07:00:   .   ____          _            __ _ _
+2026-03-25 15:09 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-25 15:09 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-25 15:09 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-25 15:09 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-25 15:09 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-25 15:09 +07:00: 
+2026-03-25 15:09 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-25 15:09 +07:00: 
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.113+07:00  INFO 75140 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 75140 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.114+07:00  INFO 75140 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.441+07:00  INFO 75140 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.446+07:00  INFO 75140 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.447+07:00  INFO 75140 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.459+07:00  INFO 75140 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.459+07:00  INFO 75140 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 329 ms
+2026-03-25 15:09 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, construction]
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.511+07:00  INFO 75140 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.607+07:00  INFO 75140 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:00.613+07:00  INFO 75140 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.632 seconds (process running for 0.803)
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:45.999+07:00  INFO 75140 --- [furniture-project] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:45.999+07:00  INFO 75140 --- [furniture-project] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-25 15:09 +07:00: 2026-03-25T15:09:46.000+07:00  INFO 75140 --- [furniture-project] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-25 15:10 +07:00: 
+2026-03-25 15:10 +07:00:   .   ____          _            __ _ _
+2026-03-25 15:10 +07:00:  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+2026-03-25 15:10 +07:00: ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+2026-03-25 15:10 +07:00:  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+2026-03-25 15:10 +07:00:   '  |____| .__|_| |_|_| |_\__, | / / / /
+2026-03-25 15:10 +07:00:  =========|_|==============|___/=/_/_/_/
+2026-03-25 15:10 +07:00: 
+2026-03-25 15:10 +07:00:  :: Spring Boot ::      (v3.5.13-SNAPSHOT)
+2026-03-25 15:10 +07:00: 
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.491+07:00  INFO 76127 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Starting FurnitureProjectApplication v0.0.1-SNAPSHOT using Java 21.0.9 with PID 76127 (/Users/truongnh/Documents/english/furniture-project/build/libs/furniture-project-0.0.1-SNAPSHOT.jar started by truongnh in /Users/truongnh/Documents/english/furniture-project)
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.492+07:00  INFO 76127 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : The following 1 profile is active: "prod"
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.753+07:00  INFO 76127 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.758+07:00  INFO 76127 --- [furniture-project] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.758+07:00  INFO 76127 --- [furniture-project] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.768+07:00  INFO 76127 --- [furniture-project] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.769+07:00  INFO 76127 --- [furniture-project] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 259 ms
+2026-03-25 15:10 +07:00: SUCCESS: settings.json loaded successfully. Keys: [site, nav, index, design, about, contact, projects, construction]
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.817+07:00  INFO 76127 --- [furniture-project] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.899+07:00  INFO 76127 --- [furniture-project] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-03-25 15:10 +07:00: 2026-03-25T15:10:35.905+07:00  INFO 76127 --- [furniture-project] [           main] c.furniture.FurnitureProjectApplication  : Started FurnitureProjectApplication in 0.537 seconds (process running for 0.708)
+2026-03-25 15:14 +07:00: 2026-03-25T15:14:22.758+07:00  INFO 76127 --- [furniture-project] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-25 15:14 +07:00: 2026-03-25T15:14:22.758+07:00  INFO 76127 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-25 15:14 +07:00: 2026-03-25T15:14:22.761+07:00  INFO 76127 --- [furniture-project] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
